@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<link rel="icon" href="images/JP-Hanbok.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--load font awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- [tether.min.js](https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js) -->
+	<script src="tether-1.3.3/dist/js/tether.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="index.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+	<title> Japanese Breakfast </title>
+  </head>
+  <body>
+	<nav class="navbar navbar-toggleable-md navbar-light custom-nav" id="header-nav">
+		<div class="container">
+			<button id="custom-navbar-toggler" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a id="brand-header" class="navbar-brand" href="#"> JAPANESE BREAKFAST </a>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="header-item nav-item nav-link" href="#" data-name="tour" id="tour-btn"> tour <span class="sr-only">(current)</span></a>
+					<!-- <a class="nav-item nav-link" href="#" data-name="news" id="news-btn"> news </a> -->
+					<a class="nav-item nav-link" href="#" data-name="music" id="music-btn"> music </a>
+					<a class="nav-item nav-link" href="#" data-name="video" id="video-btn"> video </a>
+					<a class="nav-item nav-link" href="#" data-name="shop" id="shop-btn"> shop </a>
+					<a class="nav-item nav-link" href="#" data-name="contact" id="contact-btn"> contact </a>
+					<a class="nav-item nav-link" href="#" data-name="home" id="home-btn" hidden> home </a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="body-content" class="container-fluid text-center"></div>
+
+	<nav class="navbar static-bottom bg-faded custom-nav" id="footer-nav">
+		<div class="container">
+			<span class="navbar-text"> ©2017 Japanese Breakfast </span>
+			<span id="footer-nav-spacing" class="navbar-text" style="font-size: 1em"> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; </span>
+			<span class="navbar-text">Illustration by Faye Orlove</span>
+		</div>
+	</nav>
+  </body>
+</html>
+
+<!-- Separate Page Content -->
+
+<!-- HOME -->
+<div class="section container text-center home-container" hidden>
+	<img src="images/JP-Hanbok.png" class="img-fluid" id="home-img" alt="Faye Orlove-Japanese Breakfast Hanbok">
+	<div class="row" id="social-row">
+		<div class="col-lg-12 text-right social">
+			<ul>
+				<li><a href="https://www.instagram.com/jbrekkie" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+				<li><a href="https://www.facebook.com/japanesebreakfast" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/Jbrekkie" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+				<li><a href="https://open.spotify.com/artist/7MoIc5s9KXolCBH1fy9kkw" target="_blank"><i class="fa fa-lg fa-spotify"></i></a></li>
+				<li><a href="https://itunes.apple.com/us/artist/japanese-breakfast/id1068874811" target="_blank"><i class="fa fa-lg fa-music"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UC2c_IKMEunEmkLUABRshBJQ" target="_blank"><i class="fa fa-lg fa-youtube-play"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- TOUR -->
+<div class="section container text-center tour-container" hidden></div>
+
+<!-- NEWS -->
+<!-- <div class="section container text-center news-container" hidden>
+	<p> NEWS CONTENT </p>	
+</div> -->
+
+<!-- MUSIC -->
+<div class="section container text-center music-container" hidden>
+	<div class="row">
+		<div class="col-md-6" id="ssfap-spotify-wrapper">
+			<iframe src="https://open.spotify.com/embed?uri=spotify:track:7HXfMFsrVmUQqjhBuLsZtY" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+		<div class="album col-md-6">
+			<img src="images/SSFAP.png" class="img-fluid album-img" alt="Soft Sounds From Another Planet - Japanese Breakfast">
+			<div class="row align-items-center" id="ssfap-music-links">
+				<div class="col music-link">
+					<a href="https://itunes.apple.com/ky/album/soft-sounds-from-another-planet/id1227860261" target="_blank">iTunes</a>
+				</div>
+				<div class="col music-link">
+					<a href="https://www.secretlystore.com/soft-sounds-from-another-planet-japanese-breakfast">CD</a>
+				</div>
+				<div class="col music-link">
+					<a href="https://www.secretlystore.com/soft-sounds-from-another-planet-japanese-breakfast">Vinyl</a>
+				</div>
+				<div class="col music-link">	
+					<a href="https://www.secretlystore.com/soft-sounds-from-another-planet-japanese-breakfast" target="_blank">Cassette</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6" id="psychopomp-spotify-wrapper">
+			<iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A3i7EHinpu9J5MXKMzjpjZ0&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+		<div class="album col-md-6">
+			<img src="images/Psychopomp-vinyl.png" class="img-fluid album-img" alt="Psychopomp - Japanese Breakfast">
+			<div class="row align-items-center" id="psychopomp-music-links">
+				<div class="col music-link">
+					<a href="https://itunes.apple.com/us/album/psychopomp/id1068873819" target="_blank">iTunes</a>
+				</div>
+				<div class="col music-link">
+					<a href="http://www.yellowkrecords.com/store/japanese-breakfast-psychopomp" target="_blank">CD</a>
+				</div>
+				<div class="col music-link">
+					<a href="http://www.yellowkrecords.com/store/japanese-breakfast-psychopomp" target="_blank">Vinyl</a>
+				</div>
+				<div class="col music-link">	
+					<a href="https://michellezauner.bandcamp.com/" target="_blank">Cassette</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- VIDEO -->
+<div class="section container text-center video-container" hidden>
+	<div class="video">
+		<div class="overlay" >
+			<img src="images/machinist-3.png" class="img-fluid" id="machinist-img" alt="Machinist">
+			<div class="info">
+				<span><i class="fa fa-play fa-3x" aria-hidden="true"></i></span>    
+			</div>
+		</div>
+		<div class="caption">
+			<div class="row align-items-center">
+				<p class="col">Machinist</p>
+			</div>
+			<div class="row align-items-center">
+				<p class="col video-cred">Directed by Michelle Zauner<br>Director of Photography: Adam Kolodny</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="video">
+		<div class="overlay" >
+			<img src="images/Everybody Screen.png" class="img-fluid" id="everybody-img" alt="Everybody Wants To Love You">
+			<div class="info">
+				<span><i class="fa fa-play fa-3x" aria-hidden="true"></i></span>    
+			</div>
+		</div>
+		<div class="caption">
+			<div class="row align-items-center">
+				<p class="col">Everybody Wants To Love You</p>
+			</div>
+			<div class="row align-items-center">
+				<p class="col video-cred">Directed by Adam Kolodny and Michelle Zauner<br>Director of Photography: Adam Kolodny</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="video">
+		<div class="overlay" data-link="#">
+			<img src="images/jane screen.png" class="img-fluid" id="jane-img" alt="Jane Cum">
+			<div class="info">
+				<span><i class="fa fa-play fa-3x" aria-hidden="true"></i></span>    
+			</div>
+		</div>
+		<div class="caption">
+			<div class="row align-items-center">
+				<p class="col">Jane Cum</p>
+			</div>
+			<div class="row align-items-center">
+				<p class="col video-cred">Directed & Photographed by Adam Kolodny<br>Concept by Michelle Zauner and Adam Kolodny</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="video">
+		<div class="overlay" data-link="#">
+			<img src="images/Heaven Screen.png" class="img-fluid" id="heaven-img" alt="In Heaven">
+			<div class="info">
+				<span><i class="fa fa-play fa-3x" aria-hidden="true"></i></span>    
+			</div>
+		</div>
+		<div class="caption">
+			<div class="row align-items-center">
+				<p class="col">In Heaven</p>
+			</div>
+			<div class="row align-items-center">
+				<p class="col video-cred">Directed & Photographed by Adam Kolodny<br>Concept by Michelle Zauner and Adam Kolodny</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SHOP -->
+<div class="section container text-center shop-container" hidden>
+	<!-- <div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/diving woman shirt.png" class="img-fluid shop-img" alt="Diving Woman Shirt">
+		</div>
+	</div> -->
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/crewneck_sweatshirt.png" class="img-fluid shop-img" alt="Black 노리개 Crewneck Sweatshirt">	
+		</div>
+	</div>	
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/Psychopomp-vinyl.png" class="img-fluid shop-img" alt="Psychopomp Vinyl">	
+		</div>
+	</div>
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/Psychopomp-cd.png" class="img-fluid shop-img" alt="Psychopomp CD">	
+		</div>
+	</div>
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/Psychopomp-cassette.png" class="img-fluid shop-img" alt="Psychopomp CD">	
+		</div>
+	</div>
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/American Sound_Great Big Feeling-cassette.png" class="img-fluid shop-img" alt="American Sound / Where is my Great Big Feeling? Cassette">	
+		</div>
+	</div>
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/June-cassette.png" class="img-fluid shop-img" alt="June Cassette">	
+		</div>
+	</div>
+	<div class='shop-section text-center'>
+		<div class='shop-img-container'>
+			<img src="images/Cassette Lover's Bundle.png" class="img-fluid shop-img" alt="June Cassette">
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section container contact-container" hidden>
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<p>
+				<span class="contact-title"> MGMT: </span><br>
+				<span class="email"> jbrekkie AT gmail DOT com </span><br>
+				<br>
+				<span class="contact-title"> US Booking: </span><br>
+				<span class="email"> timmy AT groundcontroltouring DOT com <br>
+				merrick AT groundcontroltouring DOT com </span><br>
+				<br>
+				<span class="contact-title"> UK/EU Booking: </span><br>
+				<span class="email">Will AT atc-live DOT com </span><br>
+				<br>
+				<span class="contact-title"> US Press: </span><br>
+				<span class="email"> eloy AT grandstandhq DOT com </span><br>
+				<br>
+				<span class="contact-title"> UK Press: </span><br>
+				<span class="email"> michelle AT secretlygroup DOT com </span><br>
+			</p>
+		</div>
+		<div class="col-lg-8 col-md-8 contact-img-container" style="text-align: center">
+			<img src="images/Japanese Breakfast Press Photo.png" class="img-fluid" id="contact-img" alt="Japanese Breakfast Press Photo">
+			<div class="row" style="margin-left: 10%; margin-top: 2%">
+				<p style="font-size: .7em"> Photo By Craig Scheihing </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
