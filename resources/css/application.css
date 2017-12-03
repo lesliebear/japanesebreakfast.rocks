@@ -1,0 +1,85 @@
+/* General */
+
+body, .custom-nav {
+	background-color: white;
+}
+
+#header-nav {
+	opacity: .8;
+	-moz-transition: height .5s ease-in-out;
+	-webkit-transition: height .5s ease-in-out;
+	-o-transition: height .5s ease-in-out;
+	transition: height .5s ease-in-out;
+	margin-top: -8px;
+}
+
+.custom-nav .container {
+	padding: 0;
+	min-width: 100%;
+}
+
+#body-content {
+	background-color: white;
+	width: 100%;
+	height: auto;
+}
+
+#header-nav .container {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#brand-header {
+	font-size: 2em;
+	letter-spacing: .125em;
+	margin-right: 3.146699%;
+}
+
+.nav-item {
+	margin-right: 11.641444%;
+	font-size: .8em;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+#brand-header, .nav-item {
+	font-family: 'Amiko', sans-serif !important;
+}
+
+#footer-nav .navbar-text, #home-container .navbar-text {
+	font-size: .8em;
+	color: black;
+}
+
+#footer-nav a, #home-container a {
+	text-decoration: none !important;
+	color: black;
+}
+
+#footer-nav a:hover, #home-container a:hover {
+	color: black;
+}
+
+#footer-text {
+	white-space: nowrap;
+	display: inline-block;
+	width: 50%;
+}
+
+#mailing-list {
+	white-space: nowrap;
+	display: inline-block;
+	font-family: 'Amiko', sans-serif !important;
+	font-size: .8em;
+	width: 40%;
+}
+
+.vertical-center {
+/*	min-height: 100%;   Fallback for browsers do NOT support vh unit 
+	min-height: 100vh; These two lines are counted as one :-)*/       
+
+	display: flex;
+	align-items: center;
+}

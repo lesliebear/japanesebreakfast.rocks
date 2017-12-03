@@ -1,0 +1,51 @@
+/*______________HOME__________________________________________*/
+
+#home-img {
+	height: auto;
+}
+
+#home-container {
+	width: 93.75%;
+}
+
+/*_________________SOCIAL-ICONS_________________*/
+
+#social-row {
+    margin: 15px 0 15px 0;
+    padding: 0;
+    width: auto;
+}
+
+#social-row ul {
+    margin: 0;
+    padding: .520833%;
+}
+
+#social-row ul li {
+    list-style: none outside none;
+    display: inline-block;
+    margin: 0 2px 0 2px;
+}
+
+.fa-stack {
+	color: white;
+	border: 2px solid #909AA0;
+	border-radius: 50%;
+	transition: all ease 0.3s;
+}
+
+.fa-stack-1x {
+	color: #909AA0;
+	transition: all ease 0.3s;
+}
+
+.fa-stack:hover {
+	background-color: black;
+	border-color: black;
+	transition: all ease 0.3s;
+}
+
+.fa-stack-1x:hover {
+	color: white;
+	transition: all ease 0.3s;
+}

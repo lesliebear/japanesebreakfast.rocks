@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"battlerName":"jbrekkieAPPROVED","characterIndex":0,"characterName":"jbrekkie_APPROVED","classId":1,"equips":[1,0,0,0,0],"faceIndex":2,"faceName":"People4","traits":[],"initialLevel":1,"maxLevel":99,"name":"J.Brekkie","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"chundredsDRUMS","characterIndex":0,"characterName":"cHundredsWalkAPPROVED","classId":3,"equips":[6,0,0,0,0],"faceIndex":3,"faceName":"People4","traits":[],"initialLevel":2,"maxLevel":99,"name":"C.Hundreds","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"SUPERTEST","characterIndex":0,"characterName":"machinistWalk3","classId":4,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"People4","traits":[],"initialLevel":30,"maxLevel":34,"name":"Machinist","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"oDotBattlerApproved","characterIndex":0,"characterName":"oDotWalk","classId":2,"equips":[5,0,0,0,0],"faceIndex":0,"faceName":"People4","traits":[],"initialLevel":4,"maxLevel":99,"name":"O.Dot","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"michelleARMOUR2","characterIndex":0,"characterName":"michelleARMOUR2","classId":1,"equips":[1,1,2,3,4],"faceIndex":2,"faceName":"People4","traits":[],"initialLevel":5,"maxLevel":99,"name":"J.Brekkie","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"chundredsDRUMS","characterIndex":0,"characterName":"cHundredsAPPROVED_armor","classId":3,"equips":[5,0,0,0,4],"faceIndex":3,"faceName":"People4","traits":[],"initialLevel":5,"maxLevel":99,"name":"C.Hundreds","nickname":"","note":"","profile":""}
+]

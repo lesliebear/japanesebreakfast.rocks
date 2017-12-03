@@ -1,0 +1,83 @@
+/*___________________SHOP_________________________________*/
+
+#shop-container {
+	width: 90%;
+}
+
+#shop-container span{
+	font-family: 'Amiko', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.shop-item {
+	width: 30%;
+	height: auto;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.shop-overlay {
+	display: inline-block;
+	position: relative;
+}
+
+.shop-overlay img:hover + .shop-info, .shop-info:hover {
+	display: block;
+	cursor: pointer;
+}
+
+.shop-info {
+	display: none;
+	color: white;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0; 
+	left: 0;
+}
+
+.shop-info .text {
+	font-size: 25px !important;
+	margin-left: 10px !important;
+}
+
+.shop-img-container {
+	margin-bottom: 10px;
+}
+
+.shop-img {
+	/*border: 3px solid #d6e5ff;*/
+	/*border: 3px solid #45484c;*/
+	border: 2px solid #6f747a;
+}
+
+@media screen and (min-width: 1440px) {
+	#shop-container {
+		width: 1296px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	.shop-item{
+		width: 40%;
+		margin-top: 1%;
+		margin-bottom: 8%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.shop-item{
+		width: 80%;
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+}

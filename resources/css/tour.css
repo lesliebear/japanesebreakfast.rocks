@@ -1,0 +1,161 @@
+/*_______________TOUR_____________________________________________*/
+
+#tour-container {
+	font-family: 'Raleway', sans-serif;
+	color: #464646;
+	width: 70%;
+}
+
+#tour-container .row {
+	border-top: none !important;
+	padding-top: 3.231125%;
+	padding-bottom: 3.231125%;
+	box-sizing: border-box;
+	width: 100%;
+	border-bottom: 1px solid #eceeef;
+	margin: 0;
+}
+
+.time {
+	font-weight: 700;
+	float: left;
+	width: 20%;
+	font-size: 13px;
+	letter-spacing: .5px;
+}
+
+.time .evt {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.venue_name {
+	width: 25%;
+	padding-right: 25px;
+}
+
+.venue_location {
+	width: 15%;
+}
+
+.venue_name, .venue_location {
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: .4px;
+}
+
+.event-links {
+	width: 40%;
+	display: inline-block;
+}
+
+.custom-btn {
+	float: right;
+	margin-left: 5px;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 1px;
+	border: 2px solid #464646;
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: .063em;
+	text-decoration: none !important;
+	padding: 0 12px 0 12px;
+	letter-spacing: 2px;
+	line-height: 28px;
+}
+
+.custom-btn:not(.empty) {
+	color: #3a3a3a;
+}
+
+.custom-btn.empty {
+	color: #eaecef;
+	border-color: #eaecef;
+}
+
+.custom-btn:hover:not(.empty) {
+	color: white;
+	background-color: #3a3a3a;
+	cursor: pointer;
+}
+
+.custom-btn.empty:hover {
+	color: #eaecef;
+	border-color: #eaecef;
+	background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+	#tour-container {
+		width: 95%;
+	}
+
+	.time {
+		-webkit-box-ordinal-group: 1;
+		order: 1;
+		float: left;
+		flex-basis: auto;
+		width: auto;
+		margin-bottom: 15px;
+		margin-top: 7px;
+	}
+
+	.time .evt {
+		width: auto;
+		height: auto;
+		margin-right: 7px;
+	}
+
+	.evt {
+		width: auto;
+		height: auto;
+		text-align: none;
+	}
+
+	.venue_name, .venue_location {
+		float: left;
+		flex-basis: auto;
+		width: auto;
+		line-height: 28px;
+	}
+
+	.venue_name {
+		-webkit-box-ordinal-group: 2;
+		order: 2;
+	}
+
+	.venue_location {
+		-webkit-box-ordinal-group: 3;
+		order: 3;
+	}
+
+	.event-links {
+		position: absolute;
+		right: 0;
+		display: block;
+		float: none;
+		width: auto;
+		flex-basis: auto;
+		white-space: nowrap;
+		text-align: right;
+		box-sizing: border-box;
+	}
+
+	.custom-btn {
+		margin-bottom: 5px;
+	}
+
+	#tour-container .row {
+		display: flex;
+		flex-flow: column-nowrap;
+		-webkit-box-pack: start;
+		justify-content: flex-start;
+		position: relative;
+		padding-bottom: 20px;
+		flex-direction: column;
+		-webkit-box-orient: vertical;
+		overflow: visible;
+	}	
+}

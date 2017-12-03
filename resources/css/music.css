@@ -1,0 +1,84 @@
+/*_________________MUSIC_____________________________________*/
+
+.album-img {
+	height: auto;
+}
+
+.album {
+	margin-bottom: 10%;
+	width: 70%;
+}
+
+.music-links {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.music-link a {
+	color: rgba(0,0,0,.7);
+	text-decoration: none;
+	/*font-family: 'Amatica SC', cursive;*/
+	font-family: 'Amiko', sans-serif;
+	/*font-weight: bold;*/
+	font-size: 1em;
+}
+
+.music-link a:hover {
+	text-decoration: none;
+}
+
+#ssfap-music-links .music-link a:hover {
+	color: rgb(213, 122, 58);
+}
+
+#psychopomp-music-links .music-link a:hover {
+	color: #76a2b4;
+}
+
+.spotify-wrapper {
+	text-align: left;
+	width: 30%;
+}
+
+#music-container {
+	height: auto;
+	width: 80%;
+}
+
+#music-container .row {
+	margin-top: 5%;
+}
+
+@media screen and (max-width: 1014px) {
+	.spotify-wrapper, .album{
+		width: 50%;
+	}
+
+	.music-links {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#music-container {
+		width: 100%;
+	}
+
+	.spotify-wrapper, .album {
+		text-align: center;
+		width: 100%;
+	}
+
+	.music-links {
+		padding-left: 25%;
+		padding-right: 25%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.music-links {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
