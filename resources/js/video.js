@@ -19,6 +19,9 @@ function load_video(){
 		var height = (width * 9) / 16;
 		var vid_id;
 		switch($(this).find('img').attr('id')){
+			case 'boyish-img':
+				vid_id = 't3bjPGUDl1k';
+				break;
 			case 'body-img':
 				vid_id = 'KmXnuD-JpOs';
 				break;

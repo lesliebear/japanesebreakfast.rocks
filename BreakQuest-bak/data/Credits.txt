@@ -1,3 +1,0 @@
-<block:time,scroll,fadeIn,fadeOut,ypos,align,image>
-    your text here
-    </block>

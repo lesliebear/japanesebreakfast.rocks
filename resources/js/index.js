@@ -7,6 +7,7 @@ $('html, body').hide();
 var header_nav_height;
 var last_clicked;
 var first_click = true;
+var social_icon_class = 'fa-lg';
 
 $(document).ready(function() {
 
@@ -89,6 +90,21 @@ $(document).ready(function() {
 			}else{
 				$('#body-content').removeClass('vertical-center');
 			}
+
+			//Handle Social Icons
+			if ($(window).width() > 1500){
+				if ($(window).width() > 2000){
+					setSocial('fa-3x');
+				}else{
+					setSocial('fa-2x');
+				}
+			}else{
+				if ($(window).width() < 670){
+					setSocial('');
+				}else{
+					setSocial('fa-lg');
+				}
+			}
 		});
 	});
 });
@@ -108,6 +124,13 @@ function set_load(name){
 		}	
 	}
 	last_clicked = name;
+}
+
+function setSocial( new_class ){
+	$('.fa-stack').each(function(){
+		$(this).removeClass(social_icon_class).addClass(new_class);
+	});
+	social_icon_class = new_class;
 }
 
 function set_navs(){

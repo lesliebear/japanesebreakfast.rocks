@@ -4,6 +4,20 @@ body, .custom-nav {
 	background-color: white;
 }
 
+.container-fluid {
+	padding: 0;
+}
+
+.vertical-center {
+/*	min-height: 100%;   Fallback for browsers do NOT support vh unit 
+	min-height: 100vh; These two lines are counted as one :-)*/       
+
+	display: flex;
+	align-items: center;
+}
+
+/* Header */
+
 #header-nav {
 	opacity: .8;
 	-moz-transition: height .5s ease-in-out;
@@ -40,17 +54,20 @@ body, .custom-nav {
 	font-size: .8em;
 }
 
-.container-fluid {
-	padding: 0;
-}
-
 #brand-header, .nav-item {
 	font-family: 'Amiko', sans-serif !important;
 }
 
-#footer-nav .navbar-text, #home-container .navbar-text {
+/* Footer */
+
+#footer-nav {
+	margin-top: 5%;
+}
+
+#footer-nav .navbar-text {
 	font-size: .8em;
 	color: black;
+	text-align: center;
 }
 
 #footer-nav a, #home-container a {
@@ -68,18 +85,221 @@ body, .custom-nav {
 	width: 50%;
 }
 
+#credits {
+	/*padding-left: 0;*/
+}
+
+#credits, #footer-nav ul{
+	display: flex;
+	align-items: center;
+}
+
+#footer-nav ul {
+	justify-content: flex-end;
+}
+
 #mailing-list {
 	white-space: nowrap;
 	display: inline-block;
 	font-family: 'Amiko', sans-serif !important;
 	font-size: .8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	width: 100%;
+	margin: 2% 0;
+	background-color: #999999;
+}
+
+label {
+	margin: 0;
+	width: 60%;
+	text-align: center;
+}
+
+.input-group{
 	width: 40%;
 }
 
-.vertical-center {
-/*	min-height: 100%;   Fallback for browsers do NOT support vh unit 
-	min-height: 100vh; These two lines are counted as one :-)*/       
+#footer-nav .row {
+	margin-bottom: 1%;
+}
 
+#footer-nav .email_list {
+    color: #555;
+    /*background-color: #c4c4c4;*/
+    background-color: #cadef6;
+    font-size: 1.19em;
+    /*margin-bottom: 2%;*/
+}
+
+#email-content {
+	width: 98%;
 	display: flex;
+	font-family: 'Amiko', sans-serif !important;
+	font-size: .8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.05em;
 	align-items: center;
+	justify-content: space-between;
+}
+
+#footer-nav form {
+    width: 100%;
+    margin-bottom: 0;
+    padding: .5% .5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#email-content p {
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 0px;
+	font-size: 100%;
+	line-height: 110%;
+}
+
+#footer-nav .email_list .field {
+  display: inline-block;
+  /*margin-left: 10%;*/
+  font-size: 13px;
+}
+
+#footer-nav .email_list input[type="email"] {
+  height: 25px;
+  width: 200px;
+  margin-bottom: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#footer-nav .email_list input[type="submit"] {
+  height: 25px;
+  color: #fff;
+  background-color: black;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #3d3da7;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+#footer-nav .email_list input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+#footer-logo img {
+	width: 20px;
+}
+
+@media screen and (min-width: 1400px){
+	#footer-nav .email_list input[type="email"] {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 1120px){
+	#footer-nav .email_list input[type="email"] {
+		/*width: 100%;*/
+		width: 171px;
+		text-align: center;
+	}
+
+	#footer-nav .email_list input[type="submit"] {
+		/*width: 100%;*/
+	}
+
+	#email-content p {
+		/*margin: 0 8%;*/
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 991px){
+	#credits, #footer-nav ul{
+		justify-content: center;
+	}
+
+	#footer-nav ul{
+		order: 1;
+	}
+
+	#credits {
+		order: 2;
+	}
+
+	#email-content {
+		flex-direction: column;
+	}
+
+	#email-content p {
+		order: 1;
+		margin: 3% 0;
+		text-align: center;
+		font-size: 100%;
+	}
+
+	#footer-nav .email_list .field {
+		order: 2;
+		width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#footer-logo {
+		order: 3;
+		margin: 3% 0;
+	}	
+}
+
+
+
+/*_________________SOCIAL-ICONS_________________*/
+
+#social-row {
+    margin: 6px 0;
+    padding: 0;
+    /*width: auto;*/
+}
+
+#social-row ul {
+    margin: 0;
+    padding: .520833%;
+}
+
+#social-row ul li {
+    list-style: none outside none;
+    display: inline-block;
+    /*margin: 0 2px 0 2px;*/
+    margin: 0 2px;
+}
+
+.fa-stack {
+	color: white;
+	border: 2px solid #909AA0;
+	border-radius: 50%;
+	transition: all ease 0.3s;
+}
+
+.fa-stack-1x {
+	color: #909AA0;
+	transition: all ease 0.3s;
+}
+
+.fa-stack:hover {
+	background-color: black;
+	border-color: black;
+	transition: all ease 0.3s;
+}
+
+.fa-stack-1x:hover {
+	color: white;
+	transition: all ease 0.3s;
 }

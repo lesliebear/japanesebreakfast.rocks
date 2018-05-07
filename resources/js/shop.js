@@ -35,6 +35,8 @@ function setShop(){
 
 function set_shop_overlay(){
 	$('.shop-overlay .shop-info').each(function(){
-		$(this).css('line-height', $(this).height().toString() + 'px');
+		var new_line_height = $('.shop-overlay .shop-info').first().height().toString() + 'px';
+		// $(this).css('line-height', $(this).height().toString() + 'px');
+		$(this).css('line-height', new_line_height);
 	});
 }
