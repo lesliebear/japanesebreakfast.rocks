@@ -1,28 +1,29 @@
 //____POPULATE TOUR SECTION_______
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://rest.bandsintown.com/artists/japanesebreakfast/events?app_id=japanesebreakfastofficialsite", true);
-xhr.onload = function (e) {
-  if (xhr.readyState === 4) {
-    if (xhr.status === 200) {
-    	var response = JSON.parse(xhr.responseText);
-		for(i=0; i<response.length; i++){
-			var event = create_event_row(response[i]);
-			$('#tour-container').append(event);
-		}
-    } else {
-      console.error(xhr.statusText);
-    }
-  }
-};
-xhr.onerror = function (e) {
-  console.error(xhr.statusText);
-};
-xhr.send(null);
-$('#tour-container').find('.row').last().find('.evt').css('border-bottom', 'none');
+// var xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://rest.bandsintown.com/artists/japanesebreakfast/events?app_id=japanesebreakfastofficialsite", true);
+// xhr.onload = function (e) {
+//   if (xhr.readyState === 4) {
+//     if (xhr.status === 200) {
+//     	var response = JSON.parse(xhr.responseText);
+// 		for(i=0; i<response.length; i++){
+// 			var event = create_event_row(response[i]);
+// 			$('#tour-container').append(event);
+// 		}
+//     } else {
+//       console.error(xhr.statusText);
+//     }
+//   }
+// };
+// xhr.onerror = function (e) {
+//   console.error(xhr.statusText);
+// };
+// xhr.send(null);
+// $('#tour-container').find('.row').last().find('.evt').css('border-bottom', 'none');
 
 $(document).ready(function() {
 	setTimeout(function(){
 		set_load('tour');
+    $('#seated-55fdf2c0').show();
 	}, 300);
 });
 
@@ -54,7 +55,7 @@ function create_event_row( event ){
 	var offer;
 	var offerlink;
 	if (event.offers[0] != undefined && event.offers[0].status == "available") {
-		offer = event.offers[0].type; 
+		offer = event.offers[0].type;
 		offerlink = event.offers[0].url;
 	}
 

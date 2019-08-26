@@ -1,5 +1,57 @@
 /*_______________TOUR_____________________________________________*/
 
+/* START FOR SEATED */
+#body-content {
+	justify-content: center !important;
+	padding-top: 0 !important;
+}
+
+#seated-55fdf2c0 {
+	font-family: 'Raleway', sans-serif;
+	/* color: #464646; */
+	color: rgb(70, 70, 70);
+	width: 70%;
+	display: none;
+}
+
+.seated-event-row {
+	border-bottom: 1px solid #eceeef !important;
+}
+
+.seated-event-row:hover {
+	background-color: inherit !important;
+	cursor: default !important;
+}
+
+.seated-event-date-cell {
+	font-size: .9rem !important;
+}
+
+.seated-event-link1 {
+	border-radius: 1px !important;
+	border: 2px solid #464646 !important;
+	font-size: 11px !important;
+	font-weight: 300;
+	letter-spacing: .063em !important;
+	text-decoration: none !important;
+	letter-spacing: 2px;
+	line-height: 28px;
+}
+
+.seated-event-link1:hover {
+	color: white !important;
+	background-color: #3a3a3a !important;
+	border-radius: 1px !important;
+}
+
+@media screen and (min-width: 769px) {
+	.seated-event-venue-location {
+		text-align: center;
+	}
+}
+
+/* END FOR SEATED */
+
 #tour-container {
 	font-family: 'Raleway', sans-serif;
 	color: #464646;
@@ -157,5 +209,5 @@
 		flex-direction: column;
 		-webkit-box-orient: vertical;
 		overflow: visible;
-	}	
+	}
 }

@@ -61,7 +61,13 @@ body, .custom-nav {
 /* Footer */
 
 #footer-nav {
-	margin-top: 5%;
+	/*margin-top: 5%;*/
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 #footer-nav .navbar-text {
@@ -87,6 +93,7 @@ body, .custom-nav {
 
 #credits {
 	/*padding-left: 0;*/
+	font-size: 12px;
 }
 
 #credits, #footer-nav ul{
@@ -96,19 +103,6 @@ body, .custom-nav {
 
 #footer-nav ul {
 	justify-content: flex-end;
-}
-
-#mailing-list {
-	white-space: nowrap;
-	display: inline-block;
-	font-family: 'Amiko', sans-serif !important;
-	font-size: .8em;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 0.05em;
-	width: 100%;
-	margin: 2% 0;
-	background-color: #999999;
 }
 
 label {
@@ -122,7 +116,7 @@ label {
 }
 
 #footer-nav .row {
-	margin-bottom: 1%;
+	/*margin-bottom: 2%;*/
 }
 
 #footer-nav .email_list {
@@ -182,11 +176,11 @@ label {
 #footer-nav .email_list input[type="submit"] {
   height: 25px;
   color: #fff;
-  background-color: black;
+  background-color: #909AA0;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  border: 1px solid #3d3da7;
+  /*border: 1px solid #3d3da7;*/
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
@@ -263,18 +257,19 @@ label {
 
 /*_________________SOCIAL-ICONS_________________*/
 
-#social-row {
+
+.social-row {
     margin: 6px 0;
     padding: 0;
     /*width: auto;*/
 }
 
-#social-row ul {
+.social-row ul {
     margin: 0;
     padding: .520833%;
 }
 
-#social-row ul li {
+.social-row ul li {
     list-style: none outside none;
     display: inline-block;
     /*margin: 0 2px 0 2px;*/

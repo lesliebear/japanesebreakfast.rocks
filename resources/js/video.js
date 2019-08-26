@@ -8,6 +8,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function() {
 	setTimeout(function(){
 		set_load('video');
+		$('#footer-nav').css('position', 'relative');
 	}, 300);
 });
 

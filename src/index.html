@@ -12,6 +12,7 @@
  
     <!-- Bootstrap -->
     <link href="../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!--load font awesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,18 +23,50 @@
     <![endif]-->
     <!-- [tether.min.js](https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js) -->
 	<script src="../resources/tether-1.3.3/dist/js/tether.min.js"></script>
-
-	<link type="text/css" rel="stylesheet" href="../resources/css/application.css"/>
+	<link type="text/css" rel="stylesheet" href="../resources/css/application.css?3"/>
 	<link type="text/css" rel="stylesheet" href="../resources/css/index.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Amatica+SC:700|Amiko|Raleway:300,700" rel="stylesheet">
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../resources/js/index.js?2"></script>
-	<script type="text/javascript" src="../resources/js/home.js"></script>
+	<script type="text/javascript" src="../resources/js/index.js?3"></script>
+	<script type="text/javascript" src="../resources/js/home.js?3"></script>
+	<!-- Start AEG Pixel Snippet -->
+	<script>
+	!function(e,t,n,a,i,l,o,s,r){e[i]||(o=e[i]=function(){o.process?o.process.apply(o,arguments):o.queue.push(arguments)},o.queue=[],o.t=1*new Date,s=t.createElement(n),s.async=1,s.src=a+"?t="+Math.ceil(new Date/l)*l,r=t.getElementsByTagName(n)[0],r.parentNode.insertBefore(s,r))}(window,document,"script","//tracking.aegpresents.com/universalpixel/universalpixel.js","kl",864e5),kl("event","pageload");
+	</script>
+	<!-- End AEG Pixel Snippet -->
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '269641573760609');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=269641573760609&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Global site tag (gtag.js) - Google Ads: 782455316 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-782455316"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<title> Japanese Breakfast - Offical Website </title>
+	  gtag('config', 'AW-782455316');
+	</script>
+	<!-- End Global site tag -->
+
+	<title> Japanese Breakfast - Official Website </title>
   </head>
   <body>
 	<nav class="navbar navbar-toggleable-md navbar-light custom-nav" id="header-nav">
@@ -65,8 +98,9 @@
 			<div class="text-center">
 				<img src="../images/JP-Hanbok.png" class="img-fluid" id="home-img" alt="Faye Orlove-Japanese Breakfast Hanbok">
 			</div>
-			<div>
-				<div id="social-row">
+
+			<div id="social-row-container">	
+				<div class="social-row">
 					<ul>
 						<li>
 							<a href="https://www.instagram.com/jbrekkie" target="_blank">
@@ -121,7 +155,7 @@
 		</div> -->
 	</div>
 
-	<nav class="navbar static-bottom bg-faded custom-nav" id="footer-nav">
+	<nav class="navbar static-bottom bg-faded custom-nav fixed" id="footer-nav">
 		<div class="container">
 			<div class="row">
 			    <div class="email_list col-xl-12">
@@ -139,7 +173,7 @@
 			        </div>
 			      </form>        
 			    </div>
-			</div>	
+			</div>
 			<div class="row">
 				<div id="credits" class="col-lg-6 col-md-12 col-sm-12">
 					<span class="navbar-text"> ©2017 Japanese Breakfast </span>
@@ -149,28 +183,58 @@
 					<span id="footer-nav-spacing" class="navbar-text" style="font-size: 1em"> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; </span>
 					<a href="http://www.fayeorlove.com" target="_blank" class="navbar-text">Illustration by Faye Orlove</a>
 				</div>
+
+				<div class="social-row col-lg-6 col-md-12 col-sm-12">
+					<ul>
+						<li>
+							<a href="https://www.instagram.com/jbrekkie" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/japanesebreakfast" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/Jbrekkie" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://open.spotify.com/artist/7MoIc5s9KXolCBH1fy9kkw" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://itunes.apple.com/us/artist/japanese-breakfast/id1068874811" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-music fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/c/JapaneseBreakfast" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
-	<!-- Start AEG Pixel Snippet -->
-	<script>
-	!function(e,t,n,a,i,l,o,s,r){e[i]||(o=e[i]=function(){o.process?o.process.apply(o,arguments):o.queue.push(arguments)},o.queue=[],o.t=1*new Date,s=t.createElement(n),s.async=1,s.src=a+"?t="+Math.ceil(new Date/l)*l,r=t.getElementsByTagName(n)[0],r.parentNode.insertBefore(s,r))}(window,document,"script","//tracking.aegpresents.com/universalpixel/universalpixel.js","kl",864e5),kl("event","pageload");
-	</script>
-	<!-- End AEG Pixel Snippet -->
   </body>
 </html>
 
-<!-- 			<div id="mailing-list">
-				<form action="//bandcamp.us16.list-manage.com/subscribe/post?u=1815a92afb8189bea0ee099fc&amp;id=93901452cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="validate" novalidate>
-					<label for="mce-EMAIL">Sign Up For Our Mailing List:</label>
-				    <div class="input-group">
-				        <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="email form-control" placeholder="email address" required>
-				        <span class="input-group-btn">
-				            <button class="btn btn-default" type="submit"><i class="fa fa-send"></i>&nbsp;</button>
-				        </span>
-				    </div>
 
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1815a92afb8189bea0ee099fc_93901452cc" tabindex="-1" value=""></div>
-				</form>
-			</div> -->
 

@@ -9,7 +9,7 @@
     <meta name="description" content="Official Website for Japanese Breakfast featuring tour dates, videos, shop and more">
     <meta name="keywords" content="Japanese Breakfast">
     <meta name="author" content="Leslie Xiong - http://lesliexiong.com">
- 
+
     <!-- Bootstrap -->
     <link href="../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--load font awesome-->
@@ -23,15 +23,55 @@
     <!-- [tether.min.js](https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js) -->
 	<script src="../resources/tether-1.3.3/dist/js/tether.min.js"></script>
 
-	<link type="text/css" rel="stylesheet" href="../resources/css/application.css"/>
-	<link type="text/css" rel="stylesheet" href="../resources/css/tour.css"/>
+	<link type="text/css" rel="stylesheet" href="../resources/css/application.css?3"/>
+	<link type="text/css" rel="stylesheet" href="../resources/css/tour.css?3"/>
 	<link href="https://fonts.googleapis.com/css?family=Amatica+SC:700|Amiko|Raleway:300,700" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../resources/js/index.js?2"></script>
-	<script type="text/javascript" src="../resources/js/tour.js"></script>
+	<script type="text/javascript" src="../resources/js/index.js?3"></script>
+	<script type="text/javascript" src="../resources/js/tour.js?3"></script>
+	<!-- Start AEG Pixel Snippet -->
+	<script>
+	!function(e,t,n,a,i,l,o,s,r){e[i]||(o=e[i]=function(){o.process?o.process.apply(o,arguments):o.queue.push(arguments)},o.queue=[],o.t=1*new Date,s=t.createElement(n),s.async=1,s.src=a+"?t="+Math.ceil(new Date/l)*l,r=t.getElementsByTagName(n)[0],r.parentNode.insertBefore(s,r))}(window,document,"script","//tracking.aegpresents.com/universalpixel/universalpixel.js","kl",864e5),kl("event","pageload");
+	</script>
+	<!-- End AEG Pixel Snippet -->
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '269641573760609');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=269641573760609&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Global site tag (gtag.js) - Google Ads: 782455316 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-782455316"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'AW-782455316');
+	</script>
+	<!-- End Global site tag -->
+	<!-- Event snippet for Japanese Breakfast conversion page -->
+	<script>
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-782455316/EPC5CNODgYwBEJSkjfUC',
+	      'transaction_id': ''
+	  });
+	</script>
+	<!-- End Event snippet -->
 
 	<title> Japanese Breakfast - Tour Dates </title>
   </head>
@@ -60,10 +100,12 @@
 
 	<div id="body-content" class="container-fluid">
 		<!-- TOUR -->
-		<div id="tour-container" class="section container" hidden></div>
+		<!-- <div id="tour-container" class="section container" hidden></div> -->
+
+    <div id="seated-55fdf2c0" data-artist-id="ffebedb9-2381-4520-805a-d19100667ffe" data-css-version="2"></div><script src="https://widget.seated.com/app.js"></script>
 	</div>
 
-	<nav class="navbar static-bottom bg-faded custom-nav" id="footer-nav">
+	<nav class="navbar static-bottom bg-faded custom-nav fixed" id="footer-nav">
 		<div class="container">
 			<div class="row">
 			    <div class="email_list col-xl-12">
@@ -77,9 +119,9 @@
 			          <div class="field">
 			            <input type="email" name="EMAIL" value="" placeholder="Enter Email" required />
 			            <input type="submit" value="Sign Up" class="btn-email_list" />
-			          </div>          
+			          </div>
 			        </div>
-			      </form>        
+			      </form>
 			    </div>
 			</div>
 			<div class="row">
@@ -92,7 +134,7 @@
 					<a href="http://www.fayeorlove.com" target="_blank" class="navbar-text">Illustration by Faye Orlove</a>
 				</div>
 
-				<div id="social-row" class="col-lg-6 col-md-12 col-sm-12">
+				<div class="social-row col-lg-6 col-md-12 col-sm-12">
 					<ul>
 						<li>
 							<a href="https://www.instagram.com/jbrekkie" target="_blank">
@@ -130,7 +172,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.youtube.com/channel/UC2c_IKMEunEmkLUABRshBJQ" target="_blank">
+							<a href="https://www.youtube.com/c/JapaneseBreakfast" target="_blank">
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
 								</span>
@@ -141,10 +183,5 @@
 			</div>
 		</div>
 	</nav>
-	<!-- Start AEG Pixel Snippet -->
-	<script>
-	!function(e,t,n,a,i,l,o,s,r){e[i]||(o=e[i]=function(){o.process?o.process.apply(o,arguments):o.queue.push(arguments)},o.queue=[],o.t=1*new Date,s=t.createElement(n),s.async=1,s.src=a+"?t="+Math.ceil(new Date/l)*l,r=t.getElementsByTagName(n)[0],r.parentNode.insertBefore(s,r))}(window,document,"script","//tracking.aegpresents.com/universalpixel/universalpixel.js","kl",864e5),kl("event","pageload");
-	</script>
-	<!-- End AEG Pixel Snippet -->
   </body>
 </html>

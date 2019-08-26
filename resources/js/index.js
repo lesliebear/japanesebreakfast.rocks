@@ -56,17 +56,23 @@ $(document).ready(function() {
 					$('#custom-navbar-toggler').height( $('#header-nav .container').height() );
 					$('.navbar-toggler-icon').height( $('#custom-navbar-toggler').height() );
 				}
-				$('#body-content').css('min-height', ($(window).height() - $('#header-nav').outerHeight()).toString()+'px');
+				$('#body-content').css('min-height', ($(window).height() - $('#header-nav').outerHeight() /* - $('#footer-nav').outerHeight()*/).toString()+'px');
 				$('#body-content').css('padding-top', '0');
 				$('#footer-nav .navbar-text').css('font-size', '.5em');
+				$('#footer-nav').css('position', 'relative');
+				$('#footer-nav').css('margin-top', '5%');
 			}else{
 				$('#home-btn').hide();
 				$('#header-nav').addClass('fixed-top');
 				$('#body-content').css('min-height', $(window).height().toString()+'px');
 				$('#header-nav').height(header_nav_height);
 				$('#body-content').css('margin-top', '0');
+				$('.section.active').css('margin-bottom', ($('#footer-nav').outerHeight()).toString()+'px');
 				$('#body-content').css('padding-top', header_nav_height);
 				$('#footer-nav .navbar-text').css('font-size', '.8em');
+				if ($('#footer-nav').hasClass('fixed')){
+					$('#footer-nav').css('position', 'fixed');
+				}
 			}
 
 			if (last_clicked == 'home'){
@@ -92,19 +98,19 @@ $(document).ready(function() {
 			}
 
 			//Handle Social Icons
-			if ($(window).width() > 1500){
-				if ($(window).width() > 2000){
-					setSocial('fa-3x');
-				}else{
-					setSocial('fa-2x');
-				}
-			}else{
+			// if ($(window).width() > 1500){
+			// 	if ($(window).width() > 2000){
+			// 		setSocial('fa-3x');
+			// 	}else{
+			// 		setSocial('fa-2x');
+			// 	}
+			// }else{
 				if ($(window).width() < 670){
 					setSocial('');
 				}else{
-					setSocial('fa-lg');
+					setSocial('fa-sm');
 				}
-			}
+			// }
 		});
 	});
 });
@@ -150,7 +156,7 @@ function set_navs(){
 		header_nav_height = 58;
 	}
 	$('#footer-nav').hide();
-	$('#footer-nav').height( $(window).height() * .16715976 );
+	// $('#footer-nav').height( $(window).height() * .16715976 );
 	// $('.custom-nav').css('padding', ($(window).width() * .03868472).toString()+'px' );
 	$('.custom-nav').css('padding', '43px' );
 }
