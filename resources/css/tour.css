@@ -1,17 +1,22 @@
 /*_______________TOUR_____________________________________________*/
 
 /* START FOR SEATED */
-#body-content {
+/* #body-content {
 	justify-content: center !important;
 	padding-top: 0 !important;
+} */
+
+#tour-container {
+	justify-content: center !important;
 }
 
 #seated-55fdf2c0 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	/* color: #464646; */
 	color: rgb(70, 70, 70);
-	width: 70%;
+	width: 100%;
 	display: none;
+	letter-spacing: .7px;
 }
 
 .seated-event-row {
@@ -25,6 +30,7 @@
 
 .seated-event-date-cell {
 	font-size: .9rem !important;
+	font-family: 'Amiko', sans-serif;
 }
 
 .seated-event-link1 {
@@ -32,7 +38,7 @@
 	border: 2px solid #464646 !important;
 	font-size: 11px !important;
 	font-weight: 300;
-	letter-spacing: .063em !important;
+	letter-spacing: 2px !important;
 	text-decoration: none !important;
 	letter-spacing: 2px;
 	line-height: 28px;

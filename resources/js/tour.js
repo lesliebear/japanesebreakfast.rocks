@@ -21,6 +21,7 @@
 // $('#tour-container').find('.row').last().find('.evt').css('border-bottom', 'none');
 
 $(document).ready(function() {
+
 	setTimeout(function(){
 		set_load('tour');
     $('#seated-55fdf2c0').show();
