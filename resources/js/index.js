@@ -20,7 +20,7 @@ $(document).ready(function() {
 	//____CLICK HANDLERS_____
 	// $('#brand-header').click(function(e) {
 	// 	e.preventDefault();
-	// 	if (!nav_toggler_shown()){	
+	// 	if (!nav_toggler_shown()){
 	// 		window.location.href = 'http://japanesebreakfast.rocks';
 	// 	}
 	// });
@@ -83,9 +83,9 @@ $(document).ready(function() {
 				setVideo();
 			}
 
-			if (last_clicked == 'music'){
-				setMusic();
-			}
+			// if (last_clicked == 'music'){
+			// 	setMusic();
+			// }
 
 			if (last_clicked == 'shop'){
 				setShop();
@@ -127,7 +127,7 @@ function set_load(name){
 				});
 		} else {
 			switch_content( name );
-		}	
+		}
 	}
 	last_clicked = name;
 }
@@ -203,4 +203,3 @@ function nav_toggler_shown(){
 		return false;
 	}
 }
-
