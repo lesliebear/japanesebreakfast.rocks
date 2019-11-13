@@ -9,7 +9,7 @@
     <meta name="description" content="Official Website for Japanese Breakfast featuring tour dates, videos, shop and more">
     <meta name="keywords" content="Japanese Breakfast">
     <meta name="author" content="Leslie Xiong - http://lesliexiong.com">
- 
+
     <!-- Bootstrap -->
     <link href="../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--load font awesome-->
@@ -105,6 +105,11 @@
     }
   } else {
     loadScript();
+  }
+
+  function setTitleHeights(){
+    console.log('CHECK');
+    $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product__title').height(32);
   }
 
   function loadScript() {
@@ -317,7 +322,7 @@
   }
 }
       });
-    });
+    })
   }
 })();
 /*]]>*/
@@ -338,9 +343,9 @@
                 <div class="field">
                   <input type="email" name="EMAIL" value="" placeholder="Enter Email" required />
                   <input type="submit" value="Sign Up" class="btn-email_list" />
-                </div>          
+                </div>
               </div>
-            </form>        
+            </form>
           </div>
       </div>
       <div class="row">
@@ -404,9 +409,21 @@
   </nav>
   <script>
     setTimeout(function(){
+      $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product__title').height(32);
+      if($(window).width() < 500){
+          $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product').css('margin-bottom', '10%');
+      }
+    }, 2000);
+    setTimeout(function(){
+      $('#collection-component-49b7cc24f23 iframe').css('margin-bottom', '15px');
       $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__collection-pagination-button').trigger('click');
     }, 4000);
+    setTimeout(function(){
+      $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product__title').height(32);
+      if($(window).width() < 500){
+          $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product').css('margin-bottom', '10%');
+      }
+    }, 6000);
   </script>
   </body>
 </html>
-

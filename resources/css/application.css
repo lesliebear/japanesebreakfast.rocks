@@ -9,8 +9,8 @@ body, .custom-nav {
 }
 
 .vertical-center {
-/*	min-height: 100%;   Fallback for browsers do NOT support vh unit 
-	min-height: 100vh; These two lines are counted as one :-)*/       
+/*	min-height: 100%;   Fallback for browsers do NOT support vh unit
+	min-height: 100vh; These two lines are counted as one :-)*/
 
 	display: flex;
 	align-items: center;
@@ -56,6 +56,10 @@ body, .custom-nav {
 
 #brand-header, .nav-item {
 	font-family: 'Amiko', sans-serif !important;
+}
+
+.navbar-toggler-icon {
+	vertical-align: inherit;
 }
 
 /* Footer */
@@ -250,7 +254,7 @@ label {
 	#footer-logo {
 		order: 3;
 		margin: 3% 0;
-	}	
+	}
 }
 
 
