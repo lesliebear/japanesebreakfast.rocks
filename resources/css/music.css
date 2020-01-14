@@ -1,6 +1,6 @@
 /*_________________MUSIC_____________________________________*/
 #music-container .row {
-  margin: 50px 20px;
+  margin: 0 20px 50px 20px;
 	margin-left: 0;
   width: 100%;
 }
@@ -10,22 +10,10 @@
 	height: auto;
 }
 
-.album {
-	/* margin-bottom: 10%; */
-	/* width: 70%; */
-}
-
-/* .music-links {
-	padding-left: 25%;
-	padding-right: 25%;
-} */
-
 .music-link a {
 	color: rgba(0,0,0,.7);
 	text-decoration: none;
-	/*font-family: 'Amatica SC', cursive;*/
 	font-family: 'Amiko', sans-serif;
-	/*font-weight: bold;*/
 	font-size: 1em;
 }
 
@@ -46,32 +34,14 @@
 }
 
 .spotify-wrapper {
-	/* text-align: left;
-	width: 30%; */
 	display: flex;
 	justify-content: flex-start;
 }
 
 #music-container {
 	height: auto;
-	/* width: 80%; */
 	width: 70%;
 	margin-bottom: 0 !important;
-}
-
-#music-container .row {
-	/* margin-top: 5%; */
-}
-
-@media screen and (max-width: 1014px) {
-	/* .spotify-wrapper, .album{
-		width: 50%;
-	} */
-
-	.music-links {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
 }
 
 @media screen and (max-width: 800px) {
@@ -80,14 +50,7 @@
 	}
 
 	.spotify-wrapper, .album {
-		/* text-align: center; */
-		/* width: 100%; */
 		justify-content: center;
-	}
-
-	.music-links {
-		padding-left: 25%;
-		padding-right: 25%;
 	}
 
 	#footer-nav {
@@ -95,13 +58,29 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   #music-container .row {
     margin: 0;
   }
 
   .col-sm-12 {
     padding: 15px;
+  }
+
+  #ssfap-cover {
+    order: 1;
+  }
+
+  #ssfap-spotify-wrapper {
+    order: 2;
+  }
+
+  #psychopomp-cover {
+    order: 3;
+  }
+
+  #psychopomp-spotify-wrapper {
+    order: 4;
   }
 }
 
@@ -110,8 +89,4 @@
 		width: 100%;
 	}
 
-	.music-links {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
 }
