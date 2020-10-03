@@ -1,57 +1,28 @@
 /*_________________VIDEO_______________________________________*/
 
-#video-container {
-	padding-left: 0;
-	padding-right: 0;
-	width: 80%;
+#body-content {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+  justify-content: center;
 	max-width: 1600px;
 }
 
-#video-container .video {
-	margin-top: 1.75%;
-	margin-bottom: 1.75%;
-	margin-left: 0;
-	margin-right: 0;
+.video {
+  width: 80%;
+  height: auto;
+  margin: 1%;
 }
 
-.overlay {
-	display: inline-block;
-	position: relative;
-}
-
-.overlay img {
-	height: auto;
-	display: block;
-}
-
-.overlay img:hover + .info, .info:hover {
-	display: block;
-	cursor: pointer;
-}
-
-.info {
-	display: none;
-	color: white;
-	background-color: rgba(0,0,0,.5);
-	text-align: center;
-	vertical-align: middle;
-	position: absolute;
-	top: 0; 
-	right: 0;
-	bottom: 0; 
-	left: 0;
-}
-
-#video-container .row p {
-	line-height: 150%;
+.video-wrapper, .player{
+	width: 100%;
 }
 
 .caption {
-	margin-top: 2%;
-}
-
-.caption p {
+	width: 100%;
 	font-family: 'Amiko', sans-serif;
+	line-height: 150%;
+	text-align: center;
 }
 
 .video-cred {

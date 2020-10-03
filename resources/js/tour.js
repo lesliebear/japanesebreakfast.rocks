@@ -21,16 +21,11 @@
 // $('#tour-container').find('.row').last().find('.evt').css('border-bottom', 'none');
 
 $(document).ready(function() {
-
 	setTimeout(function(){
-		set_load('tour');
+		$('#body-content').removeClass('text-center');
     $('#seated-55fdf2c0').show();
 	}, 300);
 });
-
-function load_tour(){
-	$('#body-content').removeClass('text-center');
-}
 
 function create_event_row( event ){
 	var parsed_datetime = event.datetime.split('-');

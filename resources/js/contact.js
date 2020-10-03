@@ -1,9 +1,17 @@
 $(document).ready(function() {
-	setTimeout(function(){
-		set_load('contact');
+  setTimeout(function(){
+    setContactContent();
+
+		$(window).resize(function(){
+			setContactContent();
+		});
 	}, 300);
 });
 
-function load_contact(){
-
+function setContactContent(){
+  if ( nav_toggler_shown() ){
+    $('#body-content').css('height', 'auto');
+	}else{
+		$('#body-content').height( ($(window).height() - $('.nav-lg').outerHeight() - $('#footer-nav').outerHeight()) );
+	}
 }

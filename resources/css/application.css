@@ -1,5 +1,10 @@
 /* General */
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 body, .custom-nav {
 	background-color: white;
 }
@@ -8,15 +13,21 @@ body, .custom-nav {
 	padding: 0;
 }
 
-.vertical-center {
-/*	min-height: 100%;   Fallback for browsers do NOT support vh unit
-	min-height: 100vh; These two lines are counted as one :-)*/
-
-	display: flex;
-	align-items: center;
+#body-content {
+	background-color: white;
+	width: 100%;
+	height: auto;
 }
 
 /* Header */
+
+.nav-lg {
+  display: flex;
+}
+
+.nav-sm {
+  display: none;
+}
 
 #header-nav {
 	opacity: .8;
@@ -24,18 +35,21 @@ body, .custom-nav {
 	-webkit-transition: height .5s ease-in-out;
 	-o-transition: height .5s ease-in-out;
 	transition: height .5s ease-in-out;
-	margin-top: -8px;
+	padding: 0;
+}
+
+.nav-lg .navbar-nav {
+	width: 100%;
+	flex-direction: row;
+  justify-content: space-between;
+	align-items: center;
+	padding: 1%;
+	max-width: 1180px;
 }
 
 .custom-nav .container {
 	padding: 0;
 	min-width: 100%;
-}
-
-#body-content {
-	background-color: white;
-	width: 100%;
-	height: auto;
 }
 
 #header-nav .container {
@@ -46,11 +60,15 @@ body, .custom-nav {
 #brand-header {
 	font-size: 2em;
 	letter-spacing: .125em;
-	margin-right: 3.146699%;
+	margin: 0;
+	margin-left: 1%;
+}
+
+.nav-sm {
+	justify-content: space-between;
 }
 
 .nav-item {
-	margin-right: 11.641444%;
 	font-size: .8em;
 }
 
@@ -62,16 +80,43 @@ body, .custom-nav {
 	vertical-align: inherit;
 }
 
+@media screen and (max-width: 991px) {
+  .nav-lg {
+    display: none;
+  }
+
+  .nav-sm {
+    display: flex;
+		padding: 10px 25px !important;
+  }
+
+  .navbar-nav {
+    width: 100%;
+		display: flex;
+  }
+
+	#brand-header {
+		font-size: 1em;
+		height: fit-content;
+		margin-left: 0;
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.nav-sm {
+		padding: 8px 15px !important;
+	}
+}
+
 /* Footer */
 
 #footer-nav {
-	/*margin-top: 5%;*/
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-    /*position: fixed;*/
-    left: 0;
-    bottom: 0;
-    width: 100%;
+	padding: 0 !important;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer-nav .navbar-text {
@@ -96,7 +141,6 @@ body, .custom-nav {
 }
 
 #credits {
-	/*padding-left: 0;*/
 	font-size: 12px;
 }
 
@@ -120,15 +164,14 @@ label {
 }
 
 #footer-nav .row {
-	/*margin-bottom: 2%;*/
+	width: 100%;
+	margin: 0;
 }
 
 #footer-nav .email_list {
     color: #555;
-    /*background-color: #c4c4c4;*/
     background-color: #cadef6;
     font-size: 1.19em;
-    /*margin-bottom: 2%;*/
 }
 
 #email-content {
@@ -140,7 +183,6 @@ label {
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	align-items: center;
-	justify-content: space-between;
 }
 
 #footer-nav form {
@@ -162,13 +204,12 @@ label {
 
 #footer-nav .email_list .field {
   display: inline-block;
-  /*margin-left: 10%;*/
   font-size: 13px;
 }
 
 #footer-nav .email_list input[type="email"] {
   height: 25px;
-  width: 200px;
+	width: 170px;
   margin-bottom: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -184,7 +225,6 @@ label {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  /*border: 1px solid #3d3da7;*/
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
@@ -197,25 +237,12 @@ label {
 	width: 20px;
 }
 
-@media screen and (min-width: 1400px){
-	#footer-nav .email_list input[type="email"] {
-		width: 400px;
-	}
-}
-
 @media screen and (max-width: 1120px){
 	#footer-nav .email_list input[type="email"] {
-		/*width: 100%;*/
-		width: 171px;
 		text-align: center;
 	}
 
-	#footer-nav .email_list input[type="submit"] {
-		/*width: 100%;*/
-	}
-
 	#email-content p {
-		/*margin: 0 8%;*/
 		font-size: 80%;
 	}
 }
@@ -265,7 +292,6 @@ label {
 .social-row {
     margin: 6px 0;
     padding: 0;
-    /*width: auto;*/
 }
 
 .social-row ul {
@@ -276,7 +302,6 @@ label {
 .social-row ul li {
     list-style: none outside none;
     display: inline-block;
-    /*margin: 0 2px 0 2px;*/
     margin: 0 2px;
 }
 

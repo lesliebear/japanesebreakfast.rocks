@@ -1,5 +1,9 @@
 /*___________________SHOP_________________________________*/
 
+#body-content {
+	max-width: 1600px;
+}
+
 #shop-container {
 	width: 90%;
 }

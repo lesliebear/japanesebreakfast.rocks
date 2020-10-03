@@ -1,14 +1,28 @@
 /*______________HOME__________________________________________*/
+#body-content {
+	display: flex;
+	align-items: center;
+}
 
 #home-img {
-	height: auto;
+	height: 100%;
+	display: none;
 }
 
 #home-container {
 	width: 93.75%;
+	height: 90%;
 }
 
-/*#footer-nav{
-	padding: 0 !important;
+#home-container .text-center {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-*/
+
+@media screen and (min-width: 992px){
+	#footer-nav{
+		position: fixed;
+	}
+}

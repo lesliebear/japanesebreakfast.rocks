@@ -2,9 +2,10 @@
 
 #contact-container {
 	width: 80%;
+	height: 100%;
 	text-align: left;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 }
 
 #contact-img {
@@ -13,13 +14,11 @@
 }
 
 .contact-title {
-	/*font-size: 1.1em;*/
-	font-size: 1.1vmax;
+	font-size: 15px;
 }
 
 .email {
-	/*font-size: .9em;*/
-	font-size: .9vmax;
+	font-size: 12px;
 }
 
 #contact-img-container {
@@ -29,12 +28,22 @@
 }
 
 #contact-text-container {
+	display: flex;
+	align-items: center;
 	-webkit-box-ordinal-group: 1;
 	order: 1;
 	width: 30%;
 }
 
-@media screen and (max-width: 995px){
+@media screen and (max-width: 991px){
+	#body-content {
+		padding-top: 5%;
+	}
+
+	#contact-container {
+		flex-direction: column;
+	}
+
 	#contact-img-container {
 		-webkit-box-ordinal-group: 1;
 		order: 1;
@@ -56,21 +65,4 @@
 		margin-top: 5%;
 	}
 
-	.contact-title {
-		font-size: 2vmax;
-	}
-
-	.email {
-		font-size: 1.8vmax;
-	}
-}
-
-@media screen and (min-width: 2000px){
-	.contact-title {
-		font-size: 1.1vw;
-	}
-
-	.email {
-		font-size: .7vw;
-	}
 }
