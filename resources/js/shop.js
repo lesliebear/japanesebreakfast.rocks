@@ -1,29 +1,31 @@
 $(document).ready(function() {
-	setTimeout(function(){
-		set_shop_overlay();
-		if (nav_toggler_shown()){
-			$('.shop-info span').hide();
-			$('.shop-info').show();
-			$('.shop-info').css('background-color', 'rgba(0,0,0,0)');
-			$('.shop-overlay').each(function(){
-				$(this).off('mouseenter mouseleave');
-			});
-		}else{
-			$('.shop-info span').show();
-			$('.shop-info').hide();
-			$('.shop-info').css('background-color', 'rgba(0,0,0,.5)');
-			$('.shop-overlay').each(function(){
-				$(this).hover(
-					function(){
-						$(this).find('.shop-info').show();
-					},
-					function(){
-						$(this).find('.shop-info').hide();
-					}
-				);
-			});
-		}
-	}, 300);
+	// setTimeout(function(){
+	// 	set_shop_overlay();
+	// 	if (nav_toggler_shown()){
+	// 		$('.shop-info span').hide();
+	// 		$('.shop-info').show();
+	// 		$('.shop-info').css('background-color', 'rgba(0,0,0,0)');
+	// 		$('.shop-overlay').each(function(){
+	// 			$(this).off('mouseenter mouseleave');
+	// 		});
+	// 	}else{
+	// 		$('.shop-info span').show();
+	// 		$('.shop-info').hide();
+	// 		$('.shop-info').css('background-color', 'rgba(0,0,0,.5)');
+	// 		$('.shop-overlay').each(function(){
+	// 			$(this).hover(
+	// 				function(){
+	// 					$(this).find('.shop-info').show();
+	// 				},
+	// 				function(){
+	// 					$(this).find('.shop-info').hide();
+	// 				}
+	// 			);
+	// 		});
+	// 	}
+	// }, 300);
+
+	console.log($('.shopify-buy__product').length);
 });
 
 function set_shop_overlay(){

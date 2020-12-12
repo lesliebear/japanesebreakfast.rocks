@@ -96,9 +96,12 @@
 
   	<div id="body-content" class="container-fluid">
       <div id='collection-component-49b7cc24f23'></div>
-      <script type="text/javascript">
-        /*<![CDATA[*/
+      <!-- BUMPER MERCH -->
+      <div id='collection-component-1605885523315'></div>
 
+      <script type="text/javascript">
+
+        /*<![CDATA[*/
         (function () {
           var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
           if (window.ShopifyBuy) {
@@ -134,6 +137,7 @@
                 options: {
                   "product": {
                     "buttonDestination": "modal",
+                    "isButton": "true",
                     "variantId": "all",
                     "contents": {
                       "imgWithCarousel": false,
@@ -141,10 +145,11 @@
                       "options": false,
                       "description": false,
                       "buttonWithQuantity": false,
-                      "quantity": false
+                      "quantity": false,
+                      "button": false
                     },
                     "text": {
-                      "button": "VIEW PRODUCT"
+                      "button": "Buy"
                     },
                     "styles": {
                       "product": {
@@ -161,7 +166,7 @@
                         ":hover": {
                           "background-color": "#cea6c4"
                         },
-                        "border-radius": "100px",
+                        "border-radius": "10px",
                         ":focus": {
                           "background-color": "#cea6c4"
                         }
@@ -176,8 +181,13 @@
                       "compareAt": {
                         "color": "#000000",
                         "font-size": "11.9px"
+                      },
+                      "img": {
+                        ":hover": {
+                          "opacity": ".5"
+                        }
                       }
-                    }
+                    },
                   },
                   "cart": {
                     "contents": {
@@ -283,13 +293,23 @@
                     }
                   },
                   "productSet": {
+                    events: {
+                      afterRender: function(e){
+                        setTimeout(function(){
+                          $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__collection-pagination-button').trigger('click');
+                        }, 1000);
+                      },
+                      loadNextPage: function(productSet){
+                        loadBumper();
+                      }
+                    },
                     "styles": {
                       "products": {
                         "@media (min-width: 601px)": {
                           "margin-left": "-30px"
                         }
                       }
-                    }
+                    },
                   },
                   "lineItem": {
                     "styles": {
@@ -325,6 +345,244 @@
           }
         })();
         /*]]>*/
+
+
+      function loadBumper(){
+
+          (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+              if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+              } else {
+                loadScript();
+              }
+            } else {
+              loadScript();
+            }
+
+            function loadScript() {
+              var script = document.createElement('script');
+              script.async = true;
+              script.src = scriptURL;
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body-content')[0]).appendChild(script);
+              script.onload = ShopifyBuyInit;
+            }
+
+            function ShopifyBuyInit() {
+              var client = ShopifyBuy.buildClient({
+                domain: 'hellomerch.myshopify.com',
+                storefrontAccessToken: '1873e945e1a4707b26108648ff0ad8e1'
+              });
+
+
+              ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('collection', {
+                  id: '203230445640',
+                  node: document.getElementById('collection-component-1605885523315'),
+                  moneyFormat: '%24%7B%7Bamount%7D%7D',
+                  options: {
+                    "product": {
+                      "buttonDestination": "modal",
+                      "isButton": "true",
+                      "variantId": "all",
+                      "contents": {
+                        "imgWithCarousel": false,
+                        "variantTitle": false,
+                        "options": false,
+                        "description": false,
+                        "buttonWithQuantity": false,
+                        "quantity": false,
+                        "button": false
+                      },
+                      "text": {
+                        "button": "Buy"
+                      },
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "calc(33.33333% - 30px)",
+                            "margin-left": "30px",
+                            "margin-bottom": "50px"
+                          }
+                        },
+                        "button": {
+                          "background-color": "#e5b8da",
+                          "padding-left": "10px",
+                          "padding-right": "10px",
+                          ":hover": {
+                            "background-color": "#cea6c4"
+                          },
+                          "border-radius": "10px",
+                          ":focus": {
+                            "background-color": "#cea6c4"
+                          }
+                        },
+                        "title": {
+                          "font-size": "14px",
+                          "color": "#000000"
+                        },
+                        "price": {
+                          "color": "#000000"
+                        },
+                        "compareAt": {
+                          "color": "#000000",
+                          "font-size": "11.9px"
+                        },
+                        "img": {
+                          ":hover": {
+                            "opacity": ".5"
+                          }
+                        }
+                      },
+                    },
+                    "cart": {
+                      "contents": {
+                        "button": true
+                      },
+                      "styles": {
+                        "button": {
+                          "background-color": "#e5b8da",
+                          ":hover": {
+                            "background-color": "#cea6c4"
+                          },
+                          "border-radius": "100px",
+                          ":focus": {
+                            "background-color": "#cea6c4"
+                          }
+                        },
+                        "title": {
+                          "color": "#000000"
+                        },
+                        "footer": {
+                          "background-color": "#ffffff"
+                        },
+                        "header": {
+                          "color": "#000000"
+                        },
+                        "lineItems": {
+                          "color": "#000000"
+                        },
+                        "subtotalText": {
+                          "color": "#000000"
+                        },
+                        "subtotal": {
+                          "color": "#000000"
+                        },
+                        "notice": {
+                          "color": "#000000"
+                        },
+                        "currency": {
+                          "color": "#000000"
+                        },
+                        "close": {
+                          ":hover": {
+                            "color": "#000000"
+                          },
+                          "color": "#000000"
+                        },
+                        "emptyCart": {
+                          "color": "#000000"
+                        }
+                      }
+                    },
+                    "modalProduct": {
+                      "contents": {
+                        "img": false,
+                        "imgWithCarousel": true,
+                        "variantTitle": false,
+                        "buttonWithQuantity": true,
+                        "button": false,
+                        "quantity": false
+                      },
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px"
+                          }
+                        },
+                        "button": {
+                          "background-color": "#e5b8da",
+                          "padding-left": "10px",
+                          "padding-right": "10px",
+                          ":hover": {
+                            "background-color": "#cea6c4"
+                          },
+                          "border-radius": "100px",
+                          ":focus": {
+                            "background-color": "#cea6c4"
+                          }
+                        }
+                      }
+                    },
+                    "toggle": {
+                      "styles": {
+                        "toggle": {
+                          "background-color": "#e5b8da",
+                          ":hover": {
+                            "background-color": "#cea6c4"
+                          },
+                          ":focus": {
+                            "background-color": "#cea6c4"
+                          }
+                        },
+                        "count": {
+                          "color": "#ffffff",
+                          ":hover": {
+                            "color": "#ffffff"
+                          }
+                        },
+                        "iconPath": {
+                          "fill": "#ffffff"
+                        }
+                      }
+                    },
+                    "productSet": {
+                      "styles": {
+                        "products": {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-30px"
+                          }
+                        }
+                      },
+                    },
+                    "lineItem": {
+                      "styles": {
+                        "variantTitle": {
+                          "color": "#000000"
+                        },
+                        "title": {
+                          "color": "#000000"
+                        },
+                        "price": {
+                          "color": "#000000"
+                        },
+                        "quantity": {
+                          "color": "#000000"
+                        },
+                        "quantityIncrement": {
+                          "color": "#000000",
+                          "border-color": "#000000"
+                        },
+                        "quantityDecrement": {
+                          "color": "#000000",
+                          "border-color": "#000000"
+                        },
+                        "quantityInput": {
+                          "color": "#000000",
+                          "border-color": "#000000"
+                        }
+                      }
+                    }
+                  }
+                });
+              });
+            }
+          })();
+          /*]]>*/
+        }
       </script>
   	</div>
 
@@ -406,21 +664,6 @@
         </div>
       </div>
     </nav>
-    <script>
-      setTimeout(function(){
-        if($(window).width() < 500){
-            $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product').css('margin-bottom', '10%');
-        }
-      }, 2000);
-      // setTimeout(function(){
-      //   $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__collection-pagination-button').trigger('click');
-      // }, 4000);
-      setTimeout(function(){
-        if($(window).width() < 500){
-            $('#collection-component-49b7cc24f23 iframe').contents().find('.shopify-buy__product').css('margin-bottom', '10%');
-        }
-      }, 6000);
-    </script>
     <script type="text/javascript" src="../resources/js/index.js?5"></script>
     <!-- <script type="text/javascript" src="../resources/js/shop.js?5"></script> -->
   </body>
