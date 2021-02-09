@@ -2,23 +2,20 @@
 #body-content {
 	display: flex;
 	align-items: center;
+	width: 100%;
+	height: auto;
 }
 
 #home-img {
-	height: 100%;
 	display: none;
+	max-width: 510px;
+	max-height: 909px;
 }
 
 #home-container {
-	width: 93.75%;
-	height: 90%;
-}
-
-#home-container .text-center {
 	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 }
 
 @media screen and (min-width: 992px){

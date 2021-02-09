@@ -24,8 +24,19 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('#body-content').removeClass('text-center');
     $('#seated-55fdf2c0').show();
+		checkBodyHeight();
+
+		$(window).resize(() => {
+			checkBodyHeight();
+		});
 	}, 300);
 });
+
+function checkBodyHeight(){
+	if ($('#seated-55fdf2c0').height() + $('#header-nav').outerHeight() + $('#footer-nav').outerHeight() < $(window).height()){
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
+	}
+}
 
 function create_event_row( event ){
 	var parsed_datetime = event.datetime.split('-');

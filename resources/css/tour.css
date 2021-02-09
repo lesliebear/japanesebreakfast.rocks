@@ -1,4 +1,9 @@
 /*_______________TOUR_____________________________________________*/
+#body-content {
+	display: grid;
+	place-items: center;
+}
+
 
 /* START FOR SEATED */
 

@@ -30,7 +30,7 @@ $(document).ready(function(){
   ];
 
   for (var i = 0; i < videos.length; i++){
-    $('#body-content').append('<div class="video"><div class="video-wrapper"><iframe id="player" class="player" src="https://www.youtube.com/embed/'+videos[i]+'?enablejsapi=1&showinfo=0&origin=http://japanesebreakfast.rocks" frameborder="0" allowfullscreen></iframe></div></div><div class="caption"><div class="row align-items-center"><p class="col">'+captions[i][0]+'</p></div><div class="row align-items-center"><p class="col video-cred">'+captions[i][1]+'<br>'+captions[i][2]+'</p></div></div>');
+    $('#body-content').append('<div class="video"><div class="video-wrapper"><iframe id="player" class="player" src="https://www.youtube.com/embed/'+videos[i]+'?enablejsapi=1&showinfo=0&origin=http://japanesebreakfast.rocks" frameborder="0" allowfullscreen></iframe></div><div class="caption"><div class="row align-items-center"><p class="col">'+captions[i][0]+'</p></div><div class="row align-items-center"><p class="video-cred">'+captions[i][1]+'<br>'+captions[i][2]+'</p></div></div></div>');
   }
 
   setVideoPlayerHeight();
