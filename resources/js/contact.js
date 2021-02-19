@@ -6,15 +6,12 @@ $(document).ready(function() {
 			setContactContent();
 		});
 	}, 300);
+
 });
 
 function setContactContent(){
   let desktop_content_space = $(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight();
   let mobile_content_space = $(window).height() - $('#header-nav').outerHeight();
-  if ($(window).height() < 600){
-    $('#contact-container').css('height', 'auto');
-    return;
-  }
 
   if ( nav_toggler_shown() ){
     $('#contact-container').height(mobile_content_space);

@@ -4,8 +4,14 @@
 	width: 80%;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#contact-container a {
+	text-decoration: none;
+	color: black;
 }
 
 .contact-title {
@@ -14,4 +20,39 @@
 
 .email {
 	font-size: 12px;
+}
+
+.contact-row {
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	margin: 1%;
+}
+
+#contact-container .fa-stack {
+	border: none;
+	border-radius: 10%;
+}
+
+#contact-container .fa-stack:hover {
+	background-color: white;
+	border-color: white;
+	transition: all ease 0.3s;
+}
+
+#contact-container .fa-stack-1x:hover {
+	color: black;
+	transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-row {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.contact-row {
+		width: 80%;
+	}
 }
