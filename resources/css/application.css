@@ -3,11 +3,17 @@
 html, body {
 	width: 100%;
 	height: 100%;
+	font-family: 'Amiko', sans-serif !important;
+	/* cursor: url('../../images/persimmon.png'), auto; */
 }
 
 body, .custom-nav {
 	background-color: white;
 }
+
+/* a {
+	cursor: url('../../images/persimmon.png'), auto !important;
+} */
 
 .container-fluid {
 	padding: 0;
@@ -71,6 +77,7 @@ body, .custom-nav {
 
 .nav-item {
 	font-size: .8em;
+	/* color: #004d6c !important; */
 }
 
 #brand-header, .nav-item {
@@ -155,13 +162,13 @@ body, .custom-nav {
 	justify-content: flex-end;
 }
 
-label {
+/* label {
 	margin: 0;
 	width: 60%;
 	text-align: center;
-}
+} */
 
-.input-group{
+/* .input-group{
 	width: 40%;
 }
 
@@ -284,15 +291,75 @@ label {
 		order: 3;
 		margin: 3% 0;
 	}
+} */
+
+#newsletter-socials-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
 }
 
+/*_______________NEWSLETTER_____________________*/
+
+#newsletter-section {
+	width: 377px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 10px;
+	border: 3px solid #170002;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+#newsletter-logo {
+	width: 10%;
+	margin-left: 20px;
+}
+
+.newsletter-subscribe-form {
+	width: 90%;
+	display: flex;
+}
+
+.newsletter-subscribe-form .field {
+	width: 100%;
+	text-align: right;
+}
+
+#email-input {
+	width: 68%;
+	border: none;
+	text-align: center;
+}
+
+#email-input:focus {
+	outline: none;
+}
+
+#sign-up-btn {
+	width: 30%;
+	border: none;
+	background-color: #170002;
+	color: white;
+	height: 40px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#sign-up-btn:hover {
+	transition: all ease 0.3s;
+}
 
 
 /*_________________SOCIAL-ICONS_________________*/
 
 
 .social-row {
-    margin: 6px 0;
+    margin: 6px 10px;
     padding: 0;
 }
 
@@ -309,7 +376,8 @@ label {
 
 .fa-stack {
 	color: white;
-	border: 2px solid #909AA0;
+	/* border: 2px solid #909AA0; */
+	border: 2px solid #170002;
 	border-radius: 50%;
 	transition: all ease 0.3s;
 	display: flex;
@@ -317,7 +385,8 @@ label {
 }
 
 .fa-stack-1x {
-	color: #909AA0;
+	/* color: #909AA0; */
+	color: #170002;
 	transition: all ease 0.3s;
 }
 
@@ -330,4 +399,39 @@ label {
 .fa-stack-1x:hover {
 	color: white;
 	transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+	#newsletter-socials-row {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.social-row {
+		width: 90%;
+	}
+
+	.social-row ul {
+		justify-content: center !important;
+		order: 1;
+	}
+
+	#newsletter-section {
+		width: 50%;
+		margin-bottom: 15px;
+	}
+
+	#newsletter-section {
+		order: 2;
+	}
+
+	#credits {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#newsletter-section {
+		width: 90%;
+	}
 }

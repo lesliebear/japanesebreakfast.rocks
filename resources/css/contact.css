@@ -16,6 +16,7 @@
 
 .contact-title {
 	font-size: 15px;
+	cursor: default;
 }
 
 .email {
@@ -32,6 +33,10 @@
 #contact-container .fa-stack {
 	border: none;
 	border-radius: 10%;
+}
+
+#contact-container .fa-stack-1x{
+	color: #909AA0;
 }
 
 #contact-container .fa-stack:hover {

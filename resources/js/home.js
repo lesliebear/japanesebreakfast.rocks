@@ -15,16 +15,16 @@ function setBodyContentHeight(){
 	} else {
 		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
 	}
-	setHomeImageHeight();
+	// setHomeImageHeight();
 }
 
-function setHomeImageHeight(){
-	if ($(window).width() > 425 || $(window).width() > $(window).height()){
-		$('#home-img').height(calculateImageHeight()).css('width', 'auto');
-	} else {
-		$('#home-img').css('height', 'auto').css('width', '80%');
-	}
-}
+// function setHomeImageHeight(){
+// 	if ($(window).width() > 425 || $(window).width() > $(window).height()){
+// 		$('#home-img').height(calculateImageHeight()).css('width', 'auto');
+// 	} else {
+// 		$('#home-img').css('height', 'auto').css('width', '80%');
+// 	}
+// }
 
 function calculateImageHeight(){
 	return ($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight()) * .95;

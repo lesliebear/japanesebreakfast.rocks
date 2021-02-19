@@ -8,8 +8,10 @@
 
 #home-img {
 	display: none;
-	max-width: 555px;
-	max-height: 909px;
+	width: 40%;
+	height: auto;
+	max-width: 777px;
+	/* max-height: 909px; */
 }
 
 #home-container {
@@ -22,5 +24,23 @@
 @media screen and (min-width: 992px){
 	#footer-nav{
 		position: fixed;
+	}
+}
+
+@media screen and (max-width: 991px){
+	#home-img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#home-img{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 425px){
+	#home-img{
+		width: 90%;
 	}
 }
