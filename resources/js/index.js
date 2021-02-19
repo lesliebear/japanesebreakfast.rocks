@@ -1,6 +1,10 @@
 var social_icon_class = 'fa-lg';
 
 $(document).ready(function() {
+	setTimeout(function(){
+		$('#footer-nav').css('visibility', 'visible');
+		visibilityFadeIn($('#body-content'));
+	}, 500);
 
 	// SET WINDOW RESIZE EVENT HANDLERS
 	setWindow();
@@ -52,4 +56,8 @@ function nav_toggler_shown(){
 	} else {
 		return false;
 	}
+}
+
+function visibilityFadeIn(target){
+	target.css({opacity: 0.0, visibility: 'visible'}).animate({opacity: 1.0});
 }

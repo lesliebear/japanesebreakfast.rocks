@@ -2,15 +2,10 @@
 
 #contact-container {
 	width: 80%;
-	height: 100%;
-	text-align: left;
+	text-align: center;
 	display: flex;
 	align-items: center;
-}
-
-#contact-img {
-	width: 80%;
-	height: auto;
+	justify-content: center;
 }
 
 .contact-title {
@@ -19,50 +14,4 @@
 
 .email {
 	font-size: 12px;
-}
-
-#contact-img-container {
-	-webkit-box-ordinal-group: 2;
-	order: 2;
-	width: 60%;
-}
-
-#contact-text-container {
-	display: flex;
-	align-items: center;
-	-webkit-box-ordinal-group: 1;
-	order: 1;
-	width: 30%;
-}
-
-@media screen and (max-width: 991px){
-	#body-content {
-		padding-top: 5%;
-	}
-
-	#contact-container {
-		flex-direction: column;
-	}
-
-	#contact-img-container {
-		-webkit-box-ordinal-group: 1;
-		order: 1;
-		width: 100%;
-	}
-
-	#contact-text-container {
-		-webkit-box-ordinal-group: 2;
-		order: 2;
-		width: 100%;
-	}
-
-	#contact-img {
-		width: 80%;
-	}
-
-	#contact-text-container p {
-		margin-left: 10%;
-		margin-top: 5%;
-	}
-
 }

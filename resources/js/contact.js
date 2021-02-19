@@ -9,9 +9,16 @@ $(document).ready(function() {
 });
 
 function setContactContent(){
+  let desktop_content_space = $(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight();
+  let mobile_content_space = $(window).height() - $('#header-nav').outerHeight();
+  if ($(window).height() < 600){
+    $('#contact-container').css('height', 'auto');
+    return;
+  }
+
   if ( nav_toggler_shown() ){
-    $('#body-content').css('height', 'auto');
+    $('#contact-container').height(mobile_content_space);
 	}else{
-		$('#body-content').height( ($(window).height() - $('.nav-lg').outerHeight() - $('#footer-nav').outerHeight()) );
+    $('#contact-container').height(desktop_content_space);
 	}
 }

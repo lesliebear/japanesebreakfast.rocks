@@ -20,19 +20,6 @@ function setHomeImage(){
 			$('#body-content').height($(window).height() - $('#header-nav').outerHeight());
 		}
 	}
-	// $('#home-img').css('height', ($('#home-container .text-center').width() * 1.63).toString() + 'px' );
-
-	// if ( nav_toggler_shown() && $('#body-content').height()+$('#header-nav').outerHeight() > $(window).height()){
-	// if ( nav_toggler_shown() ){
-	// 	if ($('#home-img').height() + $('#header-nav').height() > $(window).height()){
-	// 		$('#body-content').height('fit-content');
-	// 	}else{
-	// 		$('#body-content').height( $(window).height() - $('.nav-sm').outerHeight() );
-	// 	}
-	// 	// $('#body-content').css('min-height', 'fit-content').height( $(window).height() - $('.nav-sm').outerHeight() );
-	// }else{
-	// 	$('#body-content').height( ($(window).height() - $('.nav-lg').outerHeight() - $('#footer-nav').outerHeight()) );
-	// }
 }
 
 function calculateImageHeight(){

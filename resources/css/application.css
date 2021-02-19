@@ -17,6 +17,7 @@ body, .custom-nav {
 	background-color: white;
 	width: 100%;
 	height: auto;
+	visibility: hidden;
 }
 
 /* Header */
@@ -117,6 +118,7 @@ body, .custom-nav {
   left: 0;
   bottom: 0;
   width: 100%;
+	visibility: hidden;
 }
 
 #footer-nav .navbar-text {
