@@ -307,29 +307,27 @@ label {
     margin: 0 2px;
 }
 
-/* .fa-stack {
+.fa-stack {
 	color: white;
 	border: 2px solid #909AA0;
 	border-radius: 50%;
 	transition: all ease 0.3s;
-} */
+	display: flex;
+	align-items: center;
+}
 
 .fa-stack-1x {
 	color: #909AA0;
-	border: 2px solid #909AA0;
-	border-radius: 50%;
 	transition: all ease 0.3s;
 }
 
-/* .fa-stack:hover {
+.fa-stack:hover {
 	background-color: black;
 	border-color: black;
 	transition: all ease 0.3s;
-} */
+}
 
 .fa-stack-1x:hover {
 	color: white;
-	background-color: black;
-	border-color: black;
 	transition: all ease 0.3s;
 }
