@@ -6,6 +6,7 @@
 	flex-flow: wrap;
   justify-content: center;
 	max-width: 1600px;
+	margin-bottom: 30px;
 }
 
 .video {

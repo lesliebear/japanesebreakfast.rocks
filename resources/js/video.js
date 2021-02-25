@@ -21,7 +21,7 @@ $(document).ready(function(){
   ];
 
   var captions = [
-    [],
+    ['Be Sweet', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny', 'Featuring Marisa Dabice'],
     ['Boyish', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Body Is A Blade', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Road Head', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
@@ -32,7 +32,8 @@ $(document).ready(function(){
   ];
 
   for (var i = 0; i < videos.length; i++){
-    $('#body-content').append('<div class="video"><div class="video-wrapper"><iframe id="player" class="player" src="https://www.youtube.com/embed/'+videos[i]+'?enablejsapi=1&showinfo=0&origin=http://japanesebreakfast.rocks" frameborder="0" allowfullscreen></iframe></div><div class="caption"><div class="row align-items-center"><p class="col">'+captions[i][0]+'</p></div><div class="row align-items-center"><p class="video-cred">'+captions[i][1]+'<br>'+captions[i][2]+'</p></div></div></div>');
+    var captionString = formatCaption(captions[i]);
+    $('#body-content').append('<div class="video"><div class="video-wrapper"><iframe id="player" class="player" src="https://www.youtube.com/embed/'+videos[i]+'?enablejsapi=1&showinfo=0&origin=http://japanesebreakfast.rocks" frameborder="0" allowfullscreen></iframe></div>'+captionString);
   }
 
   setVideoPlayerHeight();
@@ -42,6 +43,18 @@ $(document).ready(function(){
   });
 
 });
+
+function formatCaption(caption){
+  var subCreds = '';
+  for (var i = 1; i < caption.length; i++){
+    subCreds += caption[i];
+    if (i < caption.length - 1){
+      subCreds += '<br>';
+    }
+  }
+
+  return '<div class="caption"><div class="row align-items-center"><p class="col">'+caption[0]+'</p></div><div class="row align-items-center"><p class="video-cred">'+subCreds+'</p></div></div></div>';
+}
 
 function setVideoPlayerHeight(){
   $('.player').height( ($('.video').width() * 9) / 16 );
