@@ -4,6 +4,9 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('#footer-nav').css('visibility', 'visible');
 		visibilityFadeIn($('#body-content'));
+		$('#sign-up-btn').mouseenter(function(){
+			doBounce($('#newsletter-logo img'), 3, '10px', 100);
+		});
 	}, 500);
 
 	// SET WINDOW RESIZE EVENT HANDLERS
@@ -15,6 +18,12 @@ $(document).ready(function() {
 
 });
 
+function doBounce(element, times, distance, speed) {
+    for(var i = 0; i < times; i++) {
+        element.animate({marginTop: '-='+distance}, speed)
+            .animate({marginTop: '+='+distance}, speed);
+    }
+}
 
 function setWindow(){
 	setTimeout(function(){
@@ -23,32 +32,7 @@ function setWindow(){
 		}else{
 			setSocial('fa-sm');
 		}
-
-		setMailingList();
 	}, 300);
-}
-
-function setMailingList(){
-	// var leftMargin;
-	// if ($(window).width() > 1250){
-	// 	$('#email-content').css('justify-content', 'flex-start');
-	// 	leftMargin = $('#email-content').width()/2 - $('#email-content p').width()/2 - $('#footer-logo').width();
-	// 	$('#email-content p').css('margin-left', leftMargin);
-	// 	leftMargin = $('#email-content').width() -$('#footer-logo').width() - $('#email-content p').outerWidth(true) - $('#email-content .field').width()-5;
-	// 	$('#email-content .field').css('margin-left', leftMargin);
-	// } else {
-	// 	$('#email-content p').css('margin-left', '0');
-	// 	$('#email-content .field').css('margin-left', '0');
-	// 	$('#email-content').css('justify-content', 'space-between');
-	// }
-
-	// $('#sign-up-btn').mouseenter(function(){
-	// 	$(this).css('background-color', '#292929');
-	// 	$('#newsletter-section').css('border', '3px solid #292929');
-	// }).mouseleave(function(){
-	// 	$(this).css('background-color', 'black');
-	// 	$('#newsletter-section').css('border', '3px solid black');
-	// });
 }
 
 function setSocial( new_class ){

@@ -21,11 +21,15 @@
 	align-items: center;
 }
 
-@media screen and (min-width: 992px){
+#footer-nav {
+	position: fixed;
+}
+
+/* @media screen and (min-width: 992px){
 	#footer-nav{
 		position: fixed;
 	}
-}
+} */
 
 @media screen and (max-width: 991px){
 	#home-img {
@@ -33,7 +37,7 @@
 	}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	#home-img{
 		width: 70%;
 	}

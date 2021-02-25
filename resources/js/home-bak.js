@@ -10,7 +10,12 @@ $(document).ready(function() {
 });
 
 function setBodyContentHeight(){
-	$('#body-content').height($(window).height());
+	if ($(window).width() <= 991){
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight());
+	} else {
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
+	}
+	// setHomeImageHeight();
 }
 
 // function setHomeImageHeight(){

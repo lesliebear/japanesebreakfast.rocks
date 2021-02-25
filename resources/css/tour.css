@@ -18,6 +18,7 @@
 
 .seated-event-row {
 	border-bottom: 1px solid #eceeef !important;
+	font-family: 'Amiko', sans-serif !important;
 }
 
 .seated-event-row:hover {
@@ -31,6 +32,8 @@
 }
 
 .seated-event-link1 {
+	color: white !important;
+	background-color: #464646 !important;
 	border-radius: 1px !important;
 	border: 2px solid #464646 !important;
 	font-size: 11px !important;
@@ -42,9 +45,24 @@
 }
 
 .seated-event-link1:hover {
-	color: white !important;
-	background-color: #3a3a3a !important;
+	/* color: #fef1b2 !important; */
+	background-color: black !important;
 	border-radius: 1px !important;
+	border-color: black !important;
+}
+
+.seated-follow-link {
+	color: white !important;
+	background-color: #464646 !important;
+	border: 2px solid #464646 !important;
+}
+
+.seated-follow-link:hover {
+	/* color: #fef1b2 !important; */
+	background-color: black !important;
+	border: 2px solid black !important;
+	border-radius: 1px !important;
+	text-decoration: none !important;
 }
 
 @media screen and (min-width: 769px) {

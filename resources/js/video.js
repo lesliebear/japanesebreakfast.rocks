@@ -10,6 +10,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function(){
   //VIDEOLIST
   var videos = [
+    '2ZfcZEIo6Bw',
     't3bjPGUDl1k',
     'KmXnuD-JpOs',
     'cCmLjb-ocPY',
@@ -20,6 +21,7 @@ $(document).ready(function(){
   ];
 
   var captions = [
+    [],
     ['Boyish', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Body Is A Blade', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Road Head', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
