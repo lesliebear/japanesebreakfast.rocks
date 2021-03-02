@@ -8,7 +8,7 @@
 /* START FOR SEATED */
 
 #seated-55fdf2c0 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Amiko', sans-serif;
 	/* color: #464646; */
 	color: rgb(70, 70, 70);
 	width: 100%;
@@ -16,8 +16,12 @@
 	letter-spacing: .7px;
 }
 
+.seated-events-table {
+	border-top: none !important;
+}
+
 .seated-event-row {
-	border-bottom: 1px solid #eceeef !important;
+	border-bottom: 1px solid #e092268c !important;
 	font-family: 'Amiko', sans-serif !important;
 }
 
@@ -33,9 +37,9 @@
 
 .seated-event-link1 {
 	color: white !important;
-	background-color: #464646 !important;
+	background-color: #e09226 !important;
 	border-radius: 1px !important;
-	border: 2px solid #464646 !important;
+	border: 2px solid #e09226 !important;
 	font-size: 11px !important;
 	font-weight: 300;
 	letter-spacing: 2px !important;
@@ -46,21 +50,21 @@
 
 .seated-event-link1:hover {
 	/* color: #fef1b2 !important; */
-	background-color: black !important;
+	background-color: #e092268c !important;
 	border-radius: 1px !important;
-	border-color: black !important;
+	border-color: #e092268c !important;
 }
 
 .seated-follow-link {
 	color: white !important;
-	background-color: #464646 !important;
-	border: 2px solid #464646 !important;
+	background-color: #e09226 !important;
+	border: 2px solid #e09226 !important;
 }
 
 .seated-follow-link:hover {
 	/* color: #fef1b2 !important; */
-	background-color: black !important;
-	border: 2px solid black !important;
+	background-color: #e092268c !important;
+	border-color: #e092268c !important;
 	border-radius: 1px !important;
 	text-decoration: none !important;
 }
@@ -74,7 +78,7 @@
 /* END FOR SEATED */
 
 #tour-container {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Amiko', sans-serif;
 	color: #464646;
 	width: 70%;
 	justify-content: center !important;

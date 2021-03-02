@@ -25,6 +25,7 @@ $(document).ready(function() {
 		$('#body-content').removeClass('text-center');
     $('#seated-55fdf2c0').show();
 		checkBodyHeight();
+		$('.seated-follow-box').next().hide();
 
 		$(window).resize(() => {
 			checkBodyHeight();

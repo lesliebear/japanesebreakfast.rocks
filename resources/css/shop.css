@@ -4,3 +4,35 @@
 	max-width: 1600px;
 	visibility: hidden;
 }
+
+#eu-link {
+	width: 100%;
+	text-align: right;
+	margin: 30px 0;
+}
+
+#eu-link a {
+	color: white;
+	background-color: #e09226;
+	border: 1px solid #e09226;
+	border-radius: 7px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+#eu-link a:hover {
+	text-decoration: none;
+	background-color: #e092268c;
+	border-color: #e092268c;
+}
+
+/* @media screen and (max-width: 779px){
+	#eu-link {
+		text-align: left;
+	}
+
+	#eu-link a {
+		margin-right: 0;
+		margin-left: 17%;
+	}
+} */

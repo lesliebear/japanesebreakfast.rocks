@@ -4,15 +4,23 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Amiko', sans-serif !important;
-	/* cursor: url('../../images/persimmon.png'), auto; */
+	/* cursor: url('../../images/persimmon.png?1'), auto; */
 }
 
 body, .custom-nav {
 	background-color: #f8c366;
 }
 
+a {
+	transition: all ease 0.3s;
+}
+
+a:hover {
+	transition: all ease 0.3s;
+}
+
 /* a {
-	cursor: url('../../images/persimmon.png'), auto !important;
+	cursor: url('../../images/persimmon.png?1'), auto !important;
 } */
 
 .container-fluid {
@@ -194,6 +202,11 @@ body, .custom-nav {
 #newsletter-logo {
 	width: 10%;
 	margin-left: 20px;
+}
+
+#newsletter-logo img {
+	width: 30px;
+	height: 30px;
 }
 
 .newsletter-subscribe-form {
