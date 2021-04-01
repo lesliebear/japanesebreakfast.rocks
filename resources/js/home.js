@@ -10,7 +10,13 @@ $(document).ready(function() {
 });
 
 function setBodyContentHeight(){
-	$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
+	if ($(window).width() > 425){
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
+	} else {
+		$('#newsletter-socials-row').css('margin-bottom', '5%');	
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight() + $('#credits').outerHeight());
+	}
+
 	// if ($(window).width() <= 991){
 	// 	$('#body-content').height($(window).height() - $('#header-nav').outerHeight());
 	// } else {
