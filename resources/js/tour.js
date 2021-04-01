@@ -30,11 +30,11 @@ $(document).ready(function() {
 		$(window).resize(() => {
 			checkBodyHeight();
 		});
-	}, 300);
+	}, 500);
 });
 
 function checkBodyHeight(){
-	if ($('#seated-55fdf2c0').height() + $('#header-nav').outerHeight() + $('#footer-nav').outerHeight() < $(window).height()){
+	if ($('#body-content').height() + $('#header-nav').outerHeight() + $('#footer-nav').outerHeight() < $(window).height()){
 		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
 	}
 }
