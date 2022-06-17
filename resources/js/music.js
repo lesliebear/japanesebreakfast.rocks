@@ -11,4 +11,5 @@ $(document).ready(function() {
 function setFrames(){
 	var dim = $('.album').width();
 	$('.spotify-wrapper iframe').width(dim).height(dim);
+	$('.album iframe').width(dim).height(dim);
 }

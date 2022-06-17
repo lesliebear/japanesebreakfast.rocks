@@ -10,6 +10,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function(){
   //VIDEOLIST
   var videos = [
+    'mcoC5ZgaFjY',
+    'q2pQIqR-m_w',
     '2ZfcZEIo6Bw',
     't3bjPGUDl1k',
     'KmXnuD-JpOs',
@@ -21,6 +23,8 @@ $(document).ready(function(){
   ];
 
   var captions = [
+    ['Savage Good Boy', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny', 'Featuring Michael Imperioli'],
+    ['Posing In Bondage', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny', 'Featuring Harmony Tividad'],
     ['Be Sweet', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny', 'Featuring Marisa Dabice'],
     ['Boyish', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Body Is A Blade', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],

@@ -26,7 +26,7 @@
 }
 
 .seated-event-row:hover {
-	background-color: inherit !important;
+	background-color: #e0922661 !important;
 	cursor: default !important;
 }
 
@@ -35,7 +35,7 @@
 	font-family: 'Amiko', sans-serif;
 }
 
-.seated-event-link1 {
+.seated-event-link1, .seated-event-link2 {
 	color: white !important;
 	background-color: #e09226 !important;
 	border-radius: 1px !important;
@@ -48,7 +48,7 @@
 	line-height: 28px;
 }
 
-.seated-event-link1:hover {
+.seated-event-link1:hover, .seated-event-link2:hover {
 	/* color: #fef1b2 !important; */
 	background-color: #e092268c !important;
 	border-radius: 1px !important;

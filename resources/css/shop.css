@@ -26,6 +26,63 @@
 	border-color: #e092268c;
 }
 
+#book-item {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px !important;
+	margin-left: 0 !important;
+}
+
+#book-item a {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#book-item a:hover {
+	text-decoration: none;
+}
+
+#book-item a img {
+	width: 15%;
+	transition: all ease .3s;
+}
+
+#book-descr {
+	/* width: 30%; */
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: black;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 600px){
+	#book-item {
+		margin-top: 100px;
+		margin-left: 0;
+	}
+
+	#book-item a {
+		width: 100%;
+	}
+
+	#book-item a img{
+		width: 50%;
+	}
+
+	#book-descr{
+		width: 50%;
+	}
+}
+
+
 /* @media screen and (max-width: 779px){
 	#eu-link {
 		text-align: left;

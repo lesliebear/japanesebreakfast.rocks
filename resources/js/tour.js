@@ -24,12 +24,13 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('#body-content').removeClass('text-center');
     $('#seated-55fdf2c0').show();
-		checkBodyHeight();
-		$('.seated-follow-box').next().hide();
 
-		$(window).resize(() => {
-			checkBodyHeight();
-		});
+		// checkBodyHeight();
+		// $('.seated-follow-box').next().hide();
+
+		// $(window).resize(() => {
+		// 	checkBodyHeight();
+		// });
 	}, 500);
 });
 
