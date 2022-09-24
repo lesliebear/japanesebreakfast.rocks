@@ -167,9 +167,9 @@ a:hover {
 	align-items: center;
 }
 
-#footer-nav ul {
+/* #footer-nav ul {
 	justify-content: flex-end;
-}
+} */
 
 #newsletter-socials-row {
 	width: 100%;
@@ -258,6 +258,7 @@ a:hover {
 .social-row ul {
     margin: 0;
     padding: .520833%;
+		justify-content: center;
 }
 
 .social-row ul li {

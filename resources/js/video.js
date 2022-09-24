@@ -18,8 +18,7 @@ $(document).ready(function(){
     'cCmLjb-ocPY',
     'wujw-FH2Itw',
     'KNT7wuqaykc',
-    'zqa-v9A3Ecw',
-    'hOsLEKnbl7I'
+    'zqa-v9A3Ecw'
   ];
 
   var captions = [
@@ -31,8 +30,7 @@ $(document).ready(function(){
     ['Road Head', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Machinist', 'Directed by Michelle Zauner', 'Director of Photography: Adam Kolodny'],
     ['Everybody Wants To Love You', 'Directed by Adam Kolodny and Michelle Zauner', 'Director of Photography: Adam Kolodny'],
-    ['Jane Cum', 'Directed & Photographed by Adam Kolodny', 'Concept by Michelle Zauner and Adam Kolodny'],
-    ['In Heaven', 'Directed & Photographed by Adam Kolodny', 'Concept by Michelle Zauner and Adam Kolodny']
+    ['Jane Cum', 'Directed & Photographed by Adam Kolodny', 'Concept by Michelle Zauner and Adam Kolodny']
   ];
 
   for (var i = 0; i < videos.length; i++){
