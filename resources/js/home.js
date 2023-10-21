@@ -1,38 +1,24 @@
-$(document).ready(function() {
-	setTimeout(function(){
-		setBodyContentHeight();
-		$('#home-img').fadeIn();
+var img = new Image();
 
-		$(window).resize(function(){
-			setBodyContentHeight();
-		});
-	}, 300);
+$(document).ready(function() {
+	setBodyContentHeight();
+	$(window).resize(function(){
+		setBodyContentHeight();
+	});
+
+	img.src = "../images/michelle-jubilee.png";
+	img.id = "home-img";
+	img.alt = "Michelle Jubilee";
+	img.onload = function () {
+	   $('#home-container').append(img);
+		 $('#home-img').fadeIn();
+	}
 });
 
 function setBodyContentHeight(){
 	if ($(window).width() > 425){
-		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
+		$('#body-content').height($(window).height() - $('#header-nav').outerHeight(true) - $('#footer-nav').outerHeight(true));
 	} else {
-		$('#newsletter-socials-row').css('margin-bottom', '5%');	
-		$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight() + $('#credits').outerHeight());
+		$('#body-content').height($(window).height() - $('.nav-sm').outerHeight(true) - $('#footer-nav').outerHeight(true) + $('#credits').outerHeight(true));
 	}
-
-	// if ($(window).width() <= 991){
-	// 	$('#body-content').height($(window).height() - $('#header-nav').outerHeight());
-	// } else {
-	// 	$('#body-content').height($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight());
-	// }
-	// setHomeImageHeight();
 }
-
-// function setHomeImageHeight(){
-// 	if ($(window).width() > 425 || $(window).width() > $(window).height()){
-// 		$('#home-img').height(calculateImageHeight()).css('width', 'auto');
-// 	} else {
-// 		$('#home-img').css('height', 'auto').css('width', '80%');
-// 	}
-// }
-
-// function calculateImageHeight(){
-// 	return ($(window).height() - $('#header-nav').outerHeight() - $('#footer-nav').outerHeight()) * .95;
-// }

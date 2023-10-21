@@ -4,7 +4,6 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Amiko', sans-serif !important;
-	/* cursor: url('../../images/persimmon.png?1'), auto; */
 }
 
 body, .custom-nav {
@@ -18,10 +17,6 @@ a {
 a:hover {
 	transition: all ease 0.3s;
 }
-
-/* a {
-	cursor: url('../../images/persimmon.png?1'), auto !important;
-} */
 
 .container-fluid {
 	padding: 0;
@@ -38,10 +33,12 @@ a:hover {
 
 .nav-lg {
   display: flex;
+	margin: 2rem;
 }
 
 .nav-sm {
   display: none;
+	margin: 1rem;
 }
 
 #header-nav {
@@ -85,7 +82,6 @@ a:hover {
 
 .nav-item {
 	font-size: .8em;
-	/* color: #004d6c !important; */
 }
 
 #brand-header, .nav-item {
@@ -103,7 +99,6 @@ a:hover {
 
   .nav-sm {
     display: flex;
-		padding: 10px 25px !important;
   }
 
   .navbar-nav {
@@ -116,12 +111,6 @@ a:hover {
 		height: fit-content;
 		margin-left: 0;
 		width: 30%;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.nav-sm {
-		padding: 8px 15px !important;
 	}
 }
 
@@ -167,21 +156,18 @@ a:hover {
 	align-items: center;
 }
 
-/* #footer-nav ul {
-	justify-content: flex-end;
-} */
-
 #newsletter-socials-row {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 0;
 }
 
 /*_______________NEWSLETTER_____________________*/
 #newsletter-descr {
-	margin: 0;
+	margin: 0 0 5px;
 }
 
 #newsletter-section {
@@ -194,7 +180,6 @@ a:hover {
 	border: 3px solid #170002;
 	border-radius: 10px;
 	font-size: 14px;
-	/* order: 2; */
 	margin-bottom: 5px;
 	background-color: #fef1b2;
 }
@@ -252,7 +237,6 @@ a:hover {
     margin: 6px 10px;
 		margin-bottom: 15px;
     padding: 0;
-		/* order: 1; */
 }
 
 .social-row ul {
@@ -269,7 +253,6 @@ a:hover {
 
 .fa-stack {
 	color: white;
-	/* border: 2px solid #909AA0; */
 	border: 2px solid #170002;
 	border-radius: 50%;
 	transition: all ease 0.3s;
@@ -278,7 +261,6 @@ a:hover {
 }
 
 .fa-stack-1x {
-	/* color: #909AA0; */
 	color: #170002;
 	transition: all ease 0.3s;
 }
@@ -295,37 +277,28 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-	/* #newsletter-socials-row {
-		flex-direction: column;
-		margin-bottom: 0;
-	} */
-
 	.social-row {
 		width: 90%;
 	}
 
 	.social-row ul {
 		justify-content: center !important;
-		/* order: 1; */
 	}
 
 	#newsletter-section {
 		width: 50%;
 		margin: 0;
-		/* margin-bottom: 15px; */
 	}
-
-	/* #newsletter-section {
-		order: 2;
-	} */
-
-	/* #credits {
-		justify-content: center;
-	} */
 }
 
 @media screen and (max-width: 600px) {
 	#newsletter-section {
 		width: 90%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#newsletter-socials-row {
+		margin-bottom: 5%;
 	}
 }

@@ -28,7 +28,7 @@
 
     <!-- Local CSS -->
   	<link type="text/css" rel="stylesheet" href="../resources/css/application.css?11"/>
-  	<link type="text/css" rel="stylesheet" href="../resources/css/shop.css?11"/>
+  	<link type="text/css" rel="stylesheet" href="../resources/css/shop.css?12"/>
   	<link href="https://fonts.googleapis.com/css?family=Amatica+SC:700|Amiko|Raleway:300,700" rel="stylesheet">
 
     <!-- Bootstrap, jQuery -->
@@ -125,14 +125,6 @@
       <div id="eu-link">
         <a href="http://japanesebreakfast.live/EU" target="_blank"> EU/UK Merch </a>
       </div>
-      <!-- <div id="book-item">
-        <a href="https://800ceoread.com/coupons/redeem/JapaneseBreakfasttour" target="_blank">
-          <img src="../images/crying_in_hmart.jpg" />
-          <div id="book-descr">
-            Crying in H Mart: A Memoir
-          </div>
-        </a>
-      </div> -->
       <div id='collection-component-49b7cc24f23'></div>
       <!-- BUMPER MERCH -->
       <!-- <div id='collection-component-1605885523315'></div> -->
@@ -333,9 +325,6 @@
                         setTimeout(function(){
                           let margin = $('iframe').contents().find('img').first().offset().left + 30 + 'px';
                           $('#eu-link a').css('margin-right', margin);
-                          // if($(window).width() > 600){
-                          //   $('#book-item').css('margin-left', margin);
-                          // }
 
                           visibilityFadeIn($('#shop-content'));
 
@@ -402,163 +391,6 @@
         })();
         /*]]>*/
 
-
-      // function loadBumper(){
-      //
-      //     (function () {
-      //       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      //       if (window.ShopifyBuy) {
-      //         if (window.ShopifyBuy.UI) {
-      //           ShopifyBuyInit();
-      //         } else {
-      //           loadScript();
-      //         }
-      //       } else {
-      //         loadScript();
-      //       }
-      //
-      //       function loadScript() {
-      //         var script = document.createElement('script');
-      //         script.async = true;
-      //         script.src = scriptURL;
-      //         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body-content')[0]).appendChild(script);
-      //         script.onload = ShopifyBuyInit;
-      //       }
-      //
-      //       function ShopifyBuyInit() {
-      //         var client = ShopifyBuy.buildClient({
-      //           domain: 'hellomerch.myshopify.com',
-      //           storefrontAccessToken: '1873e945e1a4707b26108648ff0ad8e1'
-      //         });
-      //
-      //
-      //         ShopifyBuy.UI.onReady(client).then(function (ui) {
-      //           ui.createComponent('collection', {
-      //             id: '203230445640',
-      //             node: document.getElementById('collection-component-1605885523315'),
-      //             moneyFormat: '%24%7B%7Bamount%7D%7D',
-      //             options: {
-      //               "product": {
-      //                 "buttonDestination": "modal",
-      //                 "isButton": "true",
-      //                 "variantId": "all",
-      //                 "contents": {
-      //                   "imgWithCarousel": false,
-      //                   "variantTitle": false,
-      //                   "options": false,
-      //                   "description": false,
-      //                   "buttonWithQuantity": false,
-      //                   "quantity": false,
-      //                   "button": false
-      //                 },
-      //                 "text": {
-      //                   "button": "Buy"
-      //                 },
-      //                 "styles": {
-      //                   "product": {
-      //                     "@media (min-width: 601px)": {
-      //                       "max-width": "calc(33.33333% - 30px)",
-      //                       "margin-left": "30px",
-      //                       "margin-bottom": "50px"
-      //                     }
-      //                   },
-      //                   "button": {
-      //                     "background-color": "#e5b8da",
-      //                     "padding-left": "10px",
-      //                     "padding-right": "10px",
-      //                     ":hover": {
-      //                       "background-color": "#cea6c4"
-      //                     },
-      //                     "border-radius": "10px",
-      //                     ":focus": {
-      //                       "background-color": "#cea6c4"
-      //                     }
-      //                   },
-      //                   "title": {
-      //                     "font-size": "14px",
-      //                     "color": "#000000"
-      //                   },
-      //                   "price": {
-      //                     "color": "#000000"
-      //                   },
-      //                   "compareAt": {
-      //                     "color": "#000000",
-      //                     "font-size": "11.9px"
-      //                   },
-      //                   "img": {
-      //                     ":hover": {
-      //                       "opacity": ".5"
-      //                     }
-      //                   }
-      //                 },
-      //               },
-      //               "modalProduct": {
-      //                 "contents": {
-      //                   "img": false,
-      //                   "imgWithCarousel": true,
-      //                   "variantTitle": false,
-      //                   "buttonWithQuantity": true,
-      //                   "button": false,
-      //                   "quantity": false
-      //                 },
-      //                 "styles": {
-      //                   "product": {
-      //                     "@media (min-width: 601px)": {
-      //                       "max-width": "100%",
-      //                       "margin-left": "0px",
-      //                       "margin-bottom": "0px"
-      //                     },
-      //                     "background-color": "#f8c366"
-      //                   },
-      //                   "button": {
-      //                     "background-color": "black",
-      //                     "padding-left": "10px",
-      //                     "padding-right": "10px",
-      //                     ":hover": {
-      //                       "background-color": "#1f1f1f"
-      //                     },
-      //                     "border-radius": "10px",
-      //                     ":focus": {
-      //                       "background-color": "#1f1f1f"
-      //                     }
-      //                   }
-      //                 }
-      //               },
-      //               "productSet": {
-      //                 events: {
-      //                   afterRender: function(e){
-      //                     setTimeout(function(){
-      //                       let margin = $('iframe').contents().find('img').first().offset().left + 30 + 'px';
-      //                       $('#eu-link a').css('margin-right', margin);
-      //                       if($(window).width() > 600){
-      //                         $('#book-item').css('margin-left', margin);
-      //                       }
-      //
-      //                       visibilityFadeIn($('#shop-content'));
-      //                       setTimeout(function(){
-      //                         $('iframe').contents().find('button').trigger('click');
-      //                       }, 500);
-      //                       $(window).resize(function(){
-      //                         $('#eu-link a').css('margin-right', $('iframe').contents().find('img').first().offset().left + 30 + 'px');
-      //                       });
-      //                     }, 1000);
-      //                   }
-      //                 },
-      //                 "styles": {
-      //                   "products": {
-      //                     "@media (min-width: 601px)": {
-      //                       "margin-left": "-30px"
-      //                     }
-      //                   }
-      //                 },
-      //               }
-      //             }
-      //           });
-      //         });
-      //       }
-      //     })();
-      //     /*]]>*/
-      //   }
       </script>
   	</div>
 

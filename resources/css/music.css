@@ -38,6 +38,18 @@
 	justify-content: flex-start;
 }
 
+.spotify-wrapper iframe{
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .spotify-wrapper iframe{
+    height: revert-layer;
+  }
+}
+
+
+
 #music-container {
 	height: auto;
 	width: 70%;
